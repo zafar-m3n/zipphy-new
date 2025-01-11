@@ -1,21 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { navMenu } from "@/data/data";
 import logoWhite from "@/assets/logo-white.png";
 import iconWhite from "@/assets/icon-white.png";
 import useWidth from "@/hooks/useWidth";
+import Icon from "@/components/ui/Icon";
 import AnimatedContent from "@/components/animated/AnimatedContent";
 
 const Header = () => {
   const { width, breakpoints } = useWidth();
   const isMobile = width < breakpoints.md;
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
+  const [openDesktopMenu, setOpenDesktopMenu] = useState(null);
 
-  const handleDropdownToggle = (index) => {
-    setIsDropdownOpen((prevState) => ({
-      ...prevState,
-      [index]: !prevState[index],
-    }));
+  const submenuTimeout = useRef(null);
+
+  const handleMouseEnter = (index) => {
+    clearTimeout(submenuTimeout.current);
+    setOpenDesktopMenu(index);
+  };
+
+  const handleMouseLeave = () => {
+    submenuTimeout.current = setTimeout(() => {
+      setOpenDesktopMenu(null);
+    }, 300);
   };
 
   return (
@@ -45,28 +53,32 @@ const Header = () => {
         scale={1.0}
         threshold={0.1}
       >
-        <nav className="hidden md:flex space-x-6">
-          {navMenu.map((menu, index) => (
-            <div key={index} className="relative">
-              {menu.children ? (
-                <>
-                  <button className="hover:text-gray-400" onClick={() => handleDropdownToggle(index)}>
-                    {menu.title}
-                  </button>
-                  {isDropdownOpen[index] && (
-                    <div className="absolute left-0 mt-2 bg-gray-700 text-sm rounded shadow-lg">
-                      {menu.children.map((child, childIndex) => (
-                        <Link to={child.link} key={childIndex} className="block px-4 py-2 hover:bg-gray-600">
-                          {child.title}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </>
-              ) : (
-                <Link to={menu.link} className="hover:text-gray-400">
-                  {menu.title}
-                </Link>
+        <nav className="hidden md:flex space-x-6 md:bg-white/10 md:p-3 rounded-md">
+          {navMenu.map((item, index) => (
+            <div
+              key={index}
+              className="relative"
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <a href={item.link || "#"} className="hover:text-[#0bf40a] transition-colors flex items-center space-x-1">
+                <span>{item.title}</span>
+                {item.children && <Icon icon="heroicons:chevron-down" width={16} />}
+              </a>
+              {item.children && (
+                <div
+                  className={`absolute left-0 top-full flex flex-col bg-[#010101] shadow-lg mt-2 w-60 rounded-lg transition-transform transition-opacity duration-300 ${
+                    openDesktopMenu === index
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 -translate-y-2 pointer-events-none"
+                  }`}
+                >
+                  {item.children.map((child, childIndex) => (
+                    <a key={childIndex} href={child.link} className="px-4 py-2 hover:bg-[#0bf40a33]">
+                      {child.title}
+                    </a>
+                  ))}
+                </div>
               )}
             </div>
           ))}
@@ -106,24 +118,24 @@ const Header = () => {
         >
           <button
             className={`relative w-8 h-8 flex flex-col justify-between items-center`}
-            onClick={() => setIsDropdownOpen((prevState) => !prevState)}
+            onClick={() => setIsMobileDropdownOpen((prevState) => !prevState)}
           >
             {/* Top bar */}
             <span
               className={`block h-1 w-full bg-[#f2f2f2] transition-transform duration-300 ${
-                isDropdownOpen ? "rotate-45 translate-y-[14px]" : ""
+                isMobileDropdownOpen ? "rotate-45 translate-y-[14px]" : ""
               }`}
             ></span>
             {/* Middle bar */}
             <span
               className={`block h-1 w-full bg-[#f2f2f2] transition-opacity duration-300 ${
-                isDropdownOpen ? "opacity-0" : ""
+                isMobileDropdownOpen ? "opacity-0" : ""
               }`}
             ></span>
             {/* Bottom bar */}
             <span
               className={`block h-1 w-full bg-[#f2f2f2] transition-transform duration-300 ${
-                isDropdownOpen ? "-rotate-45 -translate-y-[14px]" : ""
+                isMobileDropdownOpen ? "-rotate-45 -translate-y-[14px]" : ""
               }`}
             ></span>
           </button>
