@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "@/components/Header";
 import Squares from "@/components/animated/Squares";
+import Footer from "@/components/Footer";
 
 const DefaultLayout = () => {
   return (
@@ -17,7 +18,9 @@ const DefaultLayout = () => {
           <Outlet />
         </div>
       </main>
-      <footer className="relative z-10 p-4 text-center bg-[#010101]">Footer goes here</footer>
+      <footer className="relative z-10 p-4 text-center bg-[#010101]">
+        <Footer />
+      </footer>
     </div>
   );
 };
