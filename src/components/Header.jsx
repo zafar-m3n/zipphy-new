@@ -148,6 +148,45 @@ const Header = () => {
           </div>
         </div>
       </AnimatedContent>
+      {isMobile && (
+        <div
+          className={`absolute top-full left-0 w-full bg-[#01010122] backdrop-blur-md shadow-lg transition-transform duration-300 ${
+            isMobileDropdownOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
+          }`}
+        >
+          <ul className="flex flex-col space-y-1 p-4">
+            {navMenu.map((item, index) => (
+              <li key={index} className="relative">
+                <button
+                  onClick={() => {
+                    setOpenDesktopMenu((prevState) => (prevState === index ? null : index));
+                  }}
+                  className="flex items-center justify-between w-full text-white px-4 py-2 rounded-lg bg-[#ffffff22] hover:bg-[#ffffff33] transition-colors"
+                >
+                  <span>{item.title}</span>
+                  {item.children && (
+                    <Icon icon={`heroicons:${openDesktopMenu === index ? "chevron-up" : "chevron-down"}`} width={16} />
+                  )}
+                </button>
+                {item.children && openDesktopMenu === index && (
+                  <ul className="flex flex-col mt-2 bg-[#ffffff22] rounded-lg shadow-inner">
+                    {item.children.map((child, childIndex) => (
+                      <li key={childIndex}>
+                        <a
+                          href={child.link}
+                          className="block text-white px-4 py-2 hover:bg-[#0bf40a33] rounded-lg transition-colors"
+                        >
+                          {child.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </header>
   );
 };
