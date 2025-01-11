@@ -9,11 +9,8 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<DefaultLayout />}>
-          {/* Redirect `/` and `/home` to HomePage */}
-          <Route path="/" element={<Navigate to="/home" replace />} />
-          <Route path="/home" element={<HomePage />} />
-
-          {/* Catch all other undefined routes */}
+          <Route path="/home" element={<Navigate to="/" replace />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
