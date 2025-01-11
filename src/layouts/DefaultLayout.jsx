@@ -1,18 +1,24 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "@/components/Header";
-import AnimatedContent from "@/components/animated/AnimatedContent";
+import Squares from "@/components/animated/Squares";
 
 const DefaultLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-[#010101] text-[#f2f2f2]">
+    <div className="relative flex flex-col min-h-screen bg-[#010101] text-[#f2f2f2] overflow-hidden">
       <header className="sticky top-0 z-50 bg-transparent">
         <Header />
       </header>
-      <main className="flex-grow">
-        <Outlet />
+      <main className="relative flex-grow">
+        <div className="absolute inset-0">
+          <Squares speed={0.5} squareSize={50} direction="up" borderColor="#0bf40a33" hoverFillColor="#131313" />
+        </div>
+
+        <div className="relative z-10 p-4">
+          <Outlet />
+        </div>
       </main>
-      Footer goes here
+      <footer className="relative z-10 p-4 text-center">Footer goes here</footer>
     </div>
   );
 };
