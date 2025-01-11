@@ -94,17 +94,17 @@ const Header = () => {
         </AnimatedContent>
       </div>
 
-      <div className="flex items-center space-x-4">
-        <AnimatedContent
-          distance={100}
-          direction="horizontal"
-          reverse={false}
-          config={{ tension: 50, friction: 25 }}
-          initialOpacity={0.0}
-          animateOpacity
-          scale={1.0}
-          threshold={0.1}
-        >
+      <AnimatedContent
+        distance={100}
+        direction="horizontal"
+        reverse={false}
+        config={{ tension: 50, friction: 25 }}
+        initialOpacity={0.0}
+        animateOpacity
+        scale={1.0}
+        threshold={0.1}
+      >
+        <div className="flex items-center space-x-4">
           <div className="flex space-x-4">
             <button
               onClick={() => window.open("https://app.zipphy.com/login", "_blank")}
@@ -120,19 +120,8 @@ const Header = () => {
               <Icon icon="heroicons:arrow-top-right-on-square" width={16} />
             </button>
           </div>
-        </AnimatedContent>
 
-        <div className="md:hidden">
-          <AnimatedContent
-            distance={100}
-            direction="horizontal"
-            reverse={true}
-            config={{ tension: 50, friction: 25 }}
-            initialOpacity={0.0}
-            animateOpacity
-            scale={1.0}
-            threshold={0.1}
-          >
+          <div className="md:hidden">
             <button
               className={`relative w-8 h-8 flex flex-col justify-between items-center`}
               onClick={() => setIsMobileDropdownOpen((prevState) => !prevState)}
@@ -156,9 +145,9 @@ const Header = () => {
                 }`}
               ></span>
             </button>
-          </AnimatedContent>
+          </div>
         </div>
-      </div>
+      </AnimatedContent>
     </header>
   );
 };
