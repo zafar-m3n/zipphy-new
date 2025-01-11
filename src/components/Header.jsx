@@ -148,15 +148,18 @@ const Header = () => {
           </div>
         </div>
       </AnimatedContent>
-      {isMobile && (
-        <div
-          className={`absolute top-full left-0 w-full bg-[#01010122] backdrop-blur-md shadow-lg transition-transform duration-300 ${
-            isMobileDropdownOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
-          }`}
-        >
-          <ul className="flex flex-col space-y-1 p-4">
-            {navMenu.map((item, index) => (
-              <li key={index} className="relative">
+      <div
+        className={`absolute top-full left-0 w-full bg-[#01010122] backdrop-blur-md shadow-lg overflow-hidden transform transition-all duration-300 ${
+          isMobileDropdownOpen
+            ? "max-h-[500px] opacity-100 translate-y-0"
+            : "max-h-0 opacity-0 -translate-y-10 pointer-events-none"
+        }`}
+      >
+        <ul className="flex flex-col space-y-1 p-4">
+          {navMenu.map((item, index) => (
+            <li key={index} className="relative">
+              {/* If item has children, use button; otherwise, use anchor */}
+              {item.children ? (
                 <button
                   onClick={() => {
                     setOpenDesktopMenu((prevState) => (prevState === index ? null : index));
@@ -164,12 +167,27 @@ const Header = () => {
                   className="flex items-center justify-between w-full text-white px-4 py-2 rounded-lg bg-[#ffffff22] hover:bg-[#ffffff33] transition-colors"
                 >
                   <span>{item.title}</span>
-                  {item.children && (
-                    <Icon icon={`heroicons:${openDesktopMenu === index ? "chevron-up" : "chevron-down"}`} width={16} />
-                  )}
+                  <Icon icon={`heroicons:${openDesktopMenu === index ? "chevron-up" : "chevron-down"}`} width={16} />
                 </button>
-                {item.children && openDesktopMenu === index && (
-                  <ul className="flex flex-col mt-2 bg-[#ffffff22] rounded-lg shadow-inner">
+              ) : (
+                <a
+                  href={item.link}
+                  className="flex items-center justify-between w-full text-white px-4 py-2 rounded-lg bg-[#ffffff22] hover:bg-[#ffffff33] transition-colors"
+                >
+                  <span>{item.title}</span>
+                </a>
+              )}
+
+              {/* Submenu for items with children */}
+              {item.children && (
+                <div
+                  className={`overflow-hidden transition-all duration-300 ${
+                    openDesktopMenu === index
+                      ? "max-h-[500px] opacity-100 mt-2"
+                      : "max-h-0 opacity-0 mt-0 pointer-events-none"
+                  }`}
+                >
+                  <ul className="flex flex-col bg-[#ffffff22] rounded-lg shadow-inner">
                     {item.children.map((child, childIndex) => (
                       <li key={childIndex}>
                         <a
@@ -181,12 +199,12 @@ const Header = () => {
                       </li>
                     ))}
                   </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   );
 };
