@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { navMenu } from "@/data/data";
 import logoWhite from "@/assets/logo-white.png";
-import Icon from "@/components/ui/Icon";
 import AnimatedContent from "@/components/animated/AnimatedContent";
 
 const Header = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState({});
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleDropdownToggle = (index) => {
     setIsDropdownOpen((prevState) => ({
@@ -31,6 +30,7 @@ const Header = () => {
           <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
         </Link>
       </AnimatedContent>
+
       <AnimatedContent
         distance={100}
         direction="vertical"
@@ -100,8 +100,28 @@ const Header = () => {
           scale={1.0}
           threshold={0.1}
         >
-          <button className="text-xl">
-            <Icon icon="heroicons:bars-3" width={36} />
+          <button
+            className={`relative w-8 h-8 flex flex-col justify-between items-center`}
+            onClick={() => setIsDropdownOpen((prevState) => !prevState)}
+          >
+            {/* Top bar */}
+            <span
+              className={`block h-1 w-full bg-[#f2f2f2] transition-transform duration-300 ${
+                isDropdownOpen ? "rotate-45 translate-y-[14px]" : ""
+              }`}
+            ></span>
+            {/* Middle bar */}
+            <span
+              className={`block h-1 w-full bg-[#f2f2f2] transition-opacity duration-300 ${
+                isDropdownOpen ? "opacity-0" : ""
+              }`}
+            ></span>
+            {/* Bottom bar */}
+            <span
+              className={`block h-1 w-full bg-[#f2f2f2] transition-transform duration-300 ${
+                isDropdownOpen ? "-rotate-45 -translate-y-[14px]" : ""
+              }`}
+            ></span>
           </button>
         </AnimatedContent>
       </div>
