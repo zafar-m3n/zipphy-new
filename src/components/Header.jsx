@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { navMenu } from "@/data/data";
 import logoWhite from "@/assets/logo-white.png";
+import iconWhite from "@/assets/icon-white.png";
+import useWidth from "@/hooks/useWidth";
 import AnimatedContent from "@/components/animated/AnimatedContent";
 
 const Header = () => {
+  const { width, breakpoints } = useWidth();
+  const isMobile = width < breakpoints.md;
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleDropdownToggle = (index) => {
@@ -19,7 +23,7 @@ const Header = () => {
       <AnimatedContent
         distance={100}
         direction="horizontal"
-        reverse={true}
+        reverse={isMobile ? false : true}
         config={{ tension: 50, friction: 25 }}
         initialOpacity={0.0}
         animateOpacity
@@ -27,7 +31,7 @@ const Header = () => {
         threshold={0.1}
       >
         <Link to="/" className="hover:text-gray-400">
-          <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
+          <img src={isMobile ? iconWhite : logoWhite} alt="Zipphy Logo" className="h-20" />
         </Link>
       </AnimatedContent>
 
