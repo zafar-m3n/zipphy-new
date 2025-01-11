@@ -2,11 +2,12 @@ import React from "react";
 import Icon from "@/components/ui/Icon";
 import logoWhite from "@/assets/logo-white.png";
 import { SparklesCore } from "@/components/animated/Sparkles";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <div className="min-h-40 relative w-full bg-[#010101] flex flex-col items-center justify-center overflow-hidden">
-      <div className="w-full absolute inset-0 h-screen">
+      <div className="w-full absolute inset-0">
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
@@ -17,7 +18,7 @@ export default function Footer() {
           particleColor="#0bf40a"
         />
       </div>
-      <footer className="p-8">
+      <footer className="p-8 z-50">
         <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col items-start space-y-4">
             <img src={logoWhite} alt="Zipphy Logo" className="w-full" />
@@ -80,24 +81,24 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-[#0bf40a] mb-6 underline underline-offset-8">Useful Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="hover:text-accent">
+                <Link to="/" className="hover:text-[#0bf40a]">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/company/contact-us" className="hover:text-accent">
+                <Link to="/company/contact-us" className="hover:text-[#0bf40a]">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/company/about-us" className="hover:text-accent">
+                <Link to="/company/about-us" className="hover:text-[#0bf40a]">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/company/faq" className="hover:text-accent">
+                <Link to="/company/faq" className="hover:text-[#0bf40a]">
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -118,7 +119,7 @@ export default function Footer() {
         </div>
       </footer>
 
-      <div className="container mx-auto flex flex-col-reverse md:flex-row justify-between items-center py-4">
+      <div className="container mx-auto flex flex-col-reverse md:flex-row justify-between items-center py-4 z-50">
         <p>&copy; {new Date().getFullYear()} Zipphy.com. All Rights Reserved.</p>
         <div className="flex space-x-4">
           <a href="/terms" className="hover:text-[#0bf40a]">
