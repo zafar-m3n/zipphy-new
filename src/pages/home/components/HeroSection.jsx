@@ -29,7 +29,7 @@ const HeroSection = () => {
   }, [heroContent.length]);
 
   return (
-    <div className="container mx-auto px-6 md:px-12 lg:px-16 flex flex-col justify-center items-center text-center space-y-8 h-[calc(100vh-100px)]">
+    <div className="container mx-auto px-6 md:px-12 lg:px-16 flex flex-col justify-center items-center text-center space-y-8 md:h-[calc(100vh-100px)]">
       <h2 className="uppercase tracking-widest text-xs text-center text-green-100 flex items-center space-x-2 max-w-lg">
         <span>Our Capital, Your</span>
         <span className="flex items-center space-x-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-2 py-1 shadow-md">

@@ -42,7 +42,7 @@ const TextGenerateEffect = ({
                 animate={{ opacity: 1, filter: "blur(0px)" }}
                 transition={{ duration: duration, delay: idx * 0.2 }}
               >
-                <ShinyText text={word} textColor="#0bf40abb" shineColor="#0bf40a" className="mr-1" />
+                <ShinyText text={word} textColor="#0bf40abb" shineColor="#0bf40a" className="me-2" />
               </motion.div>
             );
           }

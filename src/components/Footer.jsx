@@ -20,7 +20,7 @@ export default function Footer() {
       </div>
       <footer className="p-8 z-50">
         <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div className="flex flex-col items-start space-y-4">
+          <div className="flex flex-col items-start justify-between space-y-4">
             <img src={logoWhite} alt="Zipphy Logo" className="w-full" />
             <div className="flex space-x-4">
               <div className="rounded-full">
