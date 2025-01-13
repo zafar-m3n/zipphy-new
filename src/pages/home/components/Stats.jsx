@@ -1,35 +1,12 @@
 import React from "react";
+import { stats } from "@/data/data";
 import GradientText from "@/components/animated/GradientText";
 import SpotlightCard from "@/components/animated/SpotlightCard";
 import CountUp from "@/components/animated/Countup";
 
 const Stats = () => {
-  const stats = [
-    {
-      stat: "51966",
-      title: "Total Clients",
-      suffix: "+",
-      separator: ",",
-    },
-    {
-      stat: "72",
-      title: "Client Profit Percentage",
-      suffix: "%",
-    },
-    {
-      stat: "150",
-      title: "IB Brokers",
-    },
-    {
-      stat: "1906",
-      title: "Premium Account Holders",
-      suffix: "+",
-      separator: ",",
-    },
-  ];
-
   return (
-    <div className="container mx-auto px-6 py-8 md:py-0 md:px-12 lg:px-16 flex flex-col justify-center items-center text-center space-y-8">
+    <div className="container mx-auto px-6 py-8 md:py-0 md:px-12 lg:px-16 flex flex-col justify-center items-center text-center space-y-8 md:mb-8">
       <GradientText
         colors={["#0bf40a", "#0ae0f4", "#0bf40a", "#0bf40a"]}
         animationSpeed={3}

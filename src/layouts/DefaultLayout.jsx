@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 const DefaultLayout = () => {
   return (
-    <div className="relative flex flex-col min-h-screen bg-[#010101] text-[#f2f2f2]">
+    <div className="relative flex flex-col min-h-screen bg-[#010101] text-[#f2f2f2] w-screen overflow-x-hidden">
       <div>
         <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
         <Spotlight className="top-40 left-full h-[80vh] w-[50vw]" fill="#0bf40a" />

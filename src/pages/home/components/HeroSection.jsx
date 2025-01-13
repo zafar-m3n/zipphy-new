@@ -1,23 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { heroContent } from "@/data/data";
 import Icon from "@/components/ui/Icon";
 import TextGenerateEffect from "@/components/animated/TextGenerate";
 
 const HeroSection = () => {
-  const heroContent = [
-    {
-      title: "Trade Smarter, Not Harder",
-      description: "Join millions of traders leveraging cutting-edge tools for maximum returns.",
-    },
-    {
-      title: "Analyze the Market with Precision",
-      description: "Stay ahead with real-time data and expert insights at your fingertips.",
-    },
-    {
-      title: "Your Journey to Financial Freedom",
-      description: "Achieve your goals with a platform designed for traders of all levels.",
-    },
-  ];
-
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
 
   useEffect(() => {
