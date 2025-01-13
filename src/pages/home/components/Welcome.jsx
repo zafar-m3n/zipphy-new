@@ -58,13 +58,13 @@ const Welcome = () => {
     >
       <section className="container mx-auto flex flex-col lg:flex-row lg:space-x-6 items-center justify-between p-8 lg:p-16 animate-appear-left animation-range-entryCover animation-timeline-view">
         <div className="lg:w-1/2 text-center lg:text-left space-y-6">
-          <h2 className="text-xl md:text-3xl font-bold text-secondary">
+          <h2 className="text-[2rem] font-bold text-secondary">
             Trading Dreams Powered by
             <ShinyText
               text="Zipphy"
               textColor="#0bf40abb"
               shineColor="#0bf40a"
-              className="ms-2 text-2xl md:text-4xl italic"
+              className="ms-2 text-[2rem] italic"
             />
           </h2>
           <p className="text-sm md:text-base text-justify">
