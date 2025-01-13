@@ -190,3 +190,29 @@ export const benefits = [
     description: "Our gateway to limitless markets, from stocks to crypto, all in one seamless platform.",
   },
 ];
+
+export const faqs = [
+  {
+    question: "What is Zipphy?",
+    answer:
+      "Zipphy is a cutting-edge trading platform that provides access to a wide range of financial markets, including stocks, forex, commodities, and crypto.",
+  },
+  {
+    question: "How secure is Zipphy?",
+    answer:
+      "Security is our top priority. Zipphy uses advanced encryption and fraud protection to ensure your assets and personal information are safe.",
+  },
+  {
+    question: "Are there any hidden fees?",
+    answer: "No, Zipphy is transparent about its pricing. There are no hidden fees—just clear, upfront costs.",
+  },
+  {
+    question: "What payment methods do you support?",
+    answer:
+      "Zipphy supports a variety of payment methods, including credit/debit cards, bank transfers, and popular e-wallets.",
+  },
+  {
+    question: "Can I trade on mobile?",
+    answer: "Yes, Zipphy offers a fully responsive platform that works seamlessly on mobile and desktop devices.",
+  },
+];
