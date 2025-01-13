@@ -23,11 +23,16 @@ export default {
           "50%": { backgroundPosition: "100% 50%" },
           "100%": { backgroundPosition: "0% 50%" },
         },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
       animation: {
         shine: "shine 5s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         gradient: "gradient 8s linear infinite",
+        float: "float 4s ease-in-out infinite",
       },
       fontFamily: {
         sans: ["Manrope", "sans-serif"],
