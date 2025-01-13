@@ -162,3 +162,31 @@ export const steps = [
     icon: "flowbite:chart-outline",
   },
 ];
+
+export const benefits = [
+  {
+    title: "Lightning fast trading",
+    description: "Trade at the speed of light with instant deposits and withdrawals empowering every move.",
+  },
+  {
+    title: "Expert Support",
+    description:
+      "Our team of experts is here to guide you every step of the way, ensuring you make the most of your trading journey.",
+  },
+  {
+    title: "Flexible Payment Options",
+    description: "Take control with a variety of secure payment methods, giving you flexibility in every transaction.",
+  },
+  {
+    title: "Transparent Pricing, No Surprises",
+    description: "No surprises, only clarity—transparent pricing and zero hidden fees put you in the driver’s seat.",
+  },
+  {
+    title: "Unmatched Security",
+    description: "Security like never before, with top-notch encryption and fraud protection keeping your assets safe.",
+  },
+  {
+    title: "Your Gateway to Markets",
+    description: "Our gateway to limitless markets, from stocks to crypto, all in one seamless platform.",
+  },
+];
