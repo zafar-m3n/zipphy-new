@@ -17,7 +17,7 @@ const Stats = () => {
       </GradientText>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {stats.map(({ stat, title, suffix, separator }, index) => (
-          <SpotlightCard key={index} spotlightColor="#0bf40a33" borderColor="#0bf40aa4">
+          <SpotlightCard key={index} spotlightColor="#0bf40aa4" borderColor="#0bf40a44">
             <div className="flex flex-col items-center space-y-2">
               <CountUp
                 to={parseFloat(stat)}

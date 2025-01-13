@@ -26,7 +26,7 @@ const HowItWorks = () => {
             scale={1.0}
             threshold={0.1}
           >
-            <SpotlightCard spotlightColor="#0bf40a77" borderColor="#93939377" className="relative">
+            <SpotlightCard borderColor="#93939377" className="relative">
               <div className="relative flex flex-col space-y-6">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <Icon icon={step.icon} width={200} className="text-[#0bf40a] opacity-15" />
