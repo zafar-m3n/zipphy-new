@@ -11,7 +11,7 @@ const Welcome = () => {
       name: "MCD",
       logo: images.mcd,
       background: "bg-yellow-100",
-      text: "text-yellow-700",
+      text: "text-yellow-400",
       position: "top[20%] left-0 md:left-[20%]",
       value: 250,
     },
@@ -20,7 +20,7 @@ const Welcome = () => {
       name: "IBM",
       logo: images.ibm,
       background: "bg-purple-100",
-      text: "text-purple-700",
+      text: "text-purple-400",
       position: "top-[70%] left-[5%] md:left-[25%]",
       value: 150,
     },
@@ -29,7 +29,7 @@ const Welcome = () => {
       name: "TSLA",
       logo: images.tsla,
       background: "bg-red-100",
-      text: "text-red-700",
+      text: "text-red-400",
       position: "top-[10%] left-[20%] md:left-[40%]",
       value: 400,
     },
@@ -39,7 +39,7 @@ const Welcome = () => {
       name: "META",
       logo: images.meta,
       background: "bg-blue-100",
-      text: "text-blue-700",
+      text: "text-blue-400",
       position: "top-[60%] left-[25%] md:left-[35%]",
       value: 350,
     },
@@ -48,7 +48,7 @@ const Welcome = () => {
       name: "MSFT",
       logo: images.msft,
       background: "bg-green-100",
-      text: "text-green-700",
+      text: "text-green-400",
       position: "top-[30%] left-[55%] md:left-[65%]",
       value: 250,
     },
@@ -64,6 +64,44 @@ const Welcome = () => {
   ];
 
   const maxValue = Math.max(...stocks.map((stock) => stock.value));
+
+  const getGlassBackgroundColor = (name) => {
+    switch (name) {
+      case "MCD":
+        return "rgba(255, 223, 116, 0.5)";
+      case "IBM":
+        return "rgba(178, 102, 255, 0.5)";
+      case "TSLA":
+        return "rgba(255, 102, 102, 0.5)";
+      case "META":
+        return "rgba(102, 178, 255, 0.5)";
+      case "MSFT":
+        return "rgba(102, 255, 178, 0.5)";
+      case "AMZN":
+        return "rgba(255, 255, 255, 0.5)";
+      default:
+        return "rgba(255, 255, 255, 0.5)";
+    }
+  };
+
+  const getGlassBorderColor = (name) => {
+    switch (name) {
+      case "MCD":
+        return "rgba(255, 223, 116, 0.5)";
+      case "IBM":
+        return "rgba(178, 102, 255, 0.5)";
+      case "TSLA":
+        return "rgba(255, 102, 102, 0.5)";
+      case "META":
+        return "rgba(102, 178, 255, 0.5)";
+      case "MSFT":
+        return "rgba(102, 255, 178, 0.5)";
+      case "AMZN":
+        return "rgba(255, 255, 255, 0.5)";
+      default:
+        return "rgba(255, 255, 255, 0.5)";
+    }
+  };
 
   return (
     <AnimatedContent
@@ -109,12 +147,14 @@ const Welcome = () => {
               const size = `${(stock.value / maxValue) * 150 + 50}px`;
               return (
                 <div
-                  className={`p-4 absolute animate-float flex flex-col justify-between ${stock.position} ${stock.background} ${stock.text} rounded-lg shadow-lg`}
+                  className={`p-4 absolute animate-float flex flex-col justify-between ${stock.position} rounded-lg shadow-lg backdrop-blur-md border`}
                   key={stock.id}
                   style={{
                     width: size,
                     height: size,
                     animationDelay: `${index * 0.3}s`,
+                    backgroundColor: getGlassBackgroundColor(stock.name),
+                    borderColor: getGlassBorderColor(stock.name),
                   }}
                 >
                   <img src={stock.logo} alt={stock.name} className="h-12 w-12 rounded-full object-contain" />
