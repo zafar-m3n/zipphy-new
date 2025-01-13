@@ -1,30 +1,10 @@
 import React from "react";
 import Icon from "@/components/ui/Icon";
+import { steps } from "@/data/data";
 import AnimatedContent from "@/components/animated/AnimatedContent";
 import SpotlightCard from "@/components/animated/SpotlightCard";
 import GradientText from "@/components/animated/GradientText";
 import useWidth from "@/hooks/useWidth";
-
-const steps = [
-  {
-    title: "Open a Zipphy Account",
-    description:
-      "Begin your journey by signing up for a Zipphy account. Provide your name, email address, and phone number, and complete the verification process to access our cutting-edge online trading platform.",
-    icon: "solar:user-id-linear",
-  },
-  {
-    title: "Fund your account",
-    description:
-      "Easily and securely deposit funds into your account using a variety of payment options, including credit cards, bank transfers, eWallets, and more. All transactions are protected with top-tier security protocols.",
-    icon: "tabler:credit-card",
-  },
-  {
-    title: "Start Trading Today!",
-    description:
-      "Once your KYC form is approved, you’re all set to start trading. Gain access to over 15,000 financial products, including stocks, commodities, forex, and indices, with advanced trading tools at your fingertips.",
-    icon: "flowbite:chart-outline",
-  },
-];
 
 const HowItWorks = () => {
   const { width, breakpoints } = useWidth();
@@ -55,7 +35,7 @@ const HowItWorks = () => {
                   colors={["#0bf40a", "#0ae0f4", "#0bf40a", "#0bf40a"]}
                   animationSpeed={3}
                   showBorder={true}
-                  className="px-4 py-2 mx-0 z-10"
+                  className="px-4 py-2 !mx-0"
                 >
                   Step {index + 1}
                 </GradientText>

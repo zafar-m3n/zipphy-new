@@ -27,12 +27,21 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        "skew-scroll": {
+          "0%": {
+            transform: "rotateX(20deg) rotateZ(-20deg) skewX(20deg)",
+          },
+          "100%": {
+            transform: "rotateX(20deg) rotateZ(-20deg) skewX(20deg) translateY(-100%)",
+          },
+        },
       },
       animation: {
         shine: "shine 5s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         gradient: "gradient 8s linear infinite",
         float: "float 4s ease-in-out infinite",
+        "skew-scroll": "skew-scroll 20s linear infinite",
       },
       fontFamily: {
         sans: ["Manrope", "sans-serif"],

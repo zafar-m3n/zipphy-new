@@ -141,3 +141,24 @@ export const stocks = [
     value: 200,
   },
 ];
+
+export const steps = [
+  {
+    title: "Open a Zipphy Account",
+    description:
+      "Begin your journey by signing up for a Zipphy account. Provide your name, email address, and phone number, and complete the verification process to access our cutting-edge online trading platform.",
+    icon: "solar:user-id-linear",
+  },
+  {
+    title: "Fund your account",
+    description:
+      "Easily and securely deposit funds into your account using a variety of payment options, including credit cards, bank transfers, eWallets, and more. All transactions are protected with top-tier security protocols.",
+    icon: "tabler:credit-card",
+  },
+  {
+    title: "Start Trading Today!",
+    description:
+      "Once your KYC form is approved, you’re all set to start trading. Gain access to over 15,000 financial products, including stocks, commodities, forex, and indices, with advanced trading tools at your fingertips.",
+    icon: "flowbite:chart-outline",
+  },
+];
