@@ -1,3 +1,5 @@
+import images from "@/assets";
+
 export const navMenu = [
   {
     title: "Home",
@@ -79,5 +81,63 @@ export const stats = [
     title: "Premium Account Holders",
     suffix: "+",
     separator: ",",
+  },
+];
+
+export const stocks = [
+  {
+    id: 1,
+    name: "MCD",
+    logo: images.mcd,
+    background: "bg-yellow-100",
+    text: "text-yellow-400",
+    position: "top[20%] left-0 md:left-[20%]",
+    value: 250,
+  },
+  {
+    id: 2,
+    name: "IBM",
+    logo: images.ibm,
+    background: "bg-purple-100",
+    text: "text-purple-400",
+    position: "top-[70%] left-[5%] md:left-[25%]",
+    value: 150,
+  },
+  {
+    id: 3,
+    name: "TSLA",
+    logo: images.tsla,
+    background: "bg-red-100",
+    text: "text-red-400",
+    position: "top-[10%] left-[20%] md:left-[40%]",
+    value: 400,
+  },
+
+  {
+    id: 4,
+    name: "META",
+    logo: images.meta,
+    background: "bg-blue-100",
+    text: "text-blue-400",
+    position: "top-[60%] left-[25%] md:left-[35%]",
+    value: 350,
+  },
+  {
+    id: 5,
+    name: "MSFT",
+    logo: images.msft,
+    background: "bg-green-100",
+    text: "text-green-400",
+    position: "top-[30%] left-[55%] md:left-[65%]",
+    value: 250,
+  },
+  {
+    id: 6,
+    name: "AMZN",
+    logo: images.amzn,
+    background: "bg-slate-100",
+    text: "text-black",
+    position: "top-[65%] left-[68%] md:left-[58%]",
+    value: 200,
   },
 ];
