@@ -18,10 +18,16 @@ export default {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        gradient: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
       },
       animation: {
         shine: "shine 5s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        gradient: "gradient 8s linear infinite",
       },
       fontFamily: {
         sans: ["Manrope", "sans-serif"],

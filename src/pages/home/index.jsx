@@ -1,11 +1,12 @@
 import React from "react";
 import HeroSection from "./components/HeroSection";
-import AnimatedContent from "@/components/animated/AnimatedContent";
+import Stats from "./components/Stats";
 
 const HomePage = () => {
   return (
     <div>
       <HeroSection />
+      <Stats />
     </div>
   );
 };
