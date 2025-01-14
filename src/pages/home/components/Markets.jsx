@@ -10,12 +10,12 @@ const Markets = () => {
     { id: "1", text: "Stocks", icon: "heroicons:x-mark", onClick: () => navigate("/markets/stocks") },
     { id: "2", text: "Forex", icon: "heroicons:check", onClick: () => navigate("/markets/forex") },
     { id: "3", text: "Commodities", icon: "heroicons:check", onClick: () => navigate("/markets/commodities") },
-    { id: "4", text: "Crypto", icon: "heroicons:check", onClick: () => navigate("/markets/crypto") },
+    { id: "4", text: "Crypto", icon: "heroicons:check", onClick: () => navigate("/markets/cryptocurrencies") },
     { id: "5", text: "Indices", icon: "heroicons:check", onClick: () => navigate("/markets/indices") },
     { id: "6", text: "Stocks", icon: "heroicons:x-mark", onClick: () => navigate("/markets/stocks") },
     { id: "7", text: "Forex", icon: "heroicons:check", onClick: () => navigate("/markets/forex") },
     { id: "8", text: "Commodities", icon: "heroicons:check", onClick: () => navigate("/markets/commodities") },
-    { id: "9", text: "Crypto", icon: "heroicons:check", onClick: () => navigate("/markets/crypto") },
+    { id: "9", text: "Crypto", icon: "heroicons:check", onClick: () => navigate("/markets/cryptocurrencies") },
     { id: "10", text: "Indices", icon: "heroicons:check", onClick: () => navigate("/markets/indices") },
   ];
 
