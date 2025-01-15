@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const AccountTypes = () => {
-  return <div>AccountTypes</div>;
+  useEffect(() => {
+    document.title = "Zipphy | Investing";
+  }, []);
+
+  return <div>Account Types</div>;
 };
 
 export default AccountTypes;

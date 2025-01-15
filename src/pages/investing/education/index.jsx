@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Education = () => {
-  return <div>Education</div>;
+  useEffect(() => {
+    document.title = "Zipphy | Investing";
+  }, []);
+
+  return <div>Educational Resources</div>;
 };
 
 export default Education;
