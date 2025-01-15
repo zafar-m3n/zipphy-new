@@ -15,6 +15,8 @@ import trades from "./5trades.webp";
 import bonus from "./25.webp";
 import doubleDeposit from "./100.webp";
 import card from "./card.webp";
+import introducingBroker from "./introducingBroker.webp";
+import referFriend from "./referFriend.webp";
 
 const images = {
   amzn,
@@ -34,6 +36,8 @@ const images = {
   bonus,
   doubleDeposit,
   card,
+  introducingBroker,
+  referFriend,
 };
 
 export default images;

@@ -14,7 +14,7 @@ import Crypto from "@/pages/markets/crypto/index";
 import Commodities from "@/pages/markets/commodities/index";
 import Indices from "@/pages/markets/indices/index";
 import ReferAFriend from "@/pages/partnerships/refer-a-friend/index";
-import IntroducingBroker from "@/pages/partnerships/introduce-broker/index";
+import IntroducingBroker from "@/pages/partnerships/introducing-broker/index";
 import AboutUs from "@/pages/company/about-us/index";
 import FAQs from "@/pages/company/FAQs/index";
 import ContactUs from "@/pages/company/contact-us/index";

@@ -346,3 +346,42 @@ export const promotionsData = [
     imageClass: "w-3/4",
   },
 ];
+
+export const features = [
+  {
+    title: "User-Friendly Interface",
+    description:
+      "Zipphy’s trading platform is designed for everyone—from beginners to professionals. Navigate effortlessly, execute trades smoothly, and access a comprehensive set of tools with ease.",
+    icon: "heroicons:face-smile",
+  },
+  {
+    title: "Advanced Charting Tools",
+    description:
+      "Gain an edge with advanced tools to analyze trends and make informed decisions. Access powerful indicators and charting options to stay ahead in the market.",
+    icon: "heroicons:chart-bar",
+  },
+  {
+    title: "Multiple Asset Classes",
+    description:
+      "Diversify your portfolio with access to various asset classes, including forex, stocks, commodities, and cryptocurrencies. Explore endless possibilities with Zipphy.",
+    icon: "heroicons:currency-dollar",
+  },
+  {
+    title: "Regulatory Compliance",
+    description:
+      "Rest assured that Zipphy operates with full regulatory compliance, offering you a safe and secure trading environment.",
+    icon: "heroicons:shield-check",
+  },
+  {
+    title: "Customer Support",
+    description:
+      "Get 24/7 support from our dedicated team of experts who are always ready to assist with your trading needs.",
+    icon: "heroicons:phone-arrow-down-left",
+  },
+  {
+    title: "Secure and Reliable Infrastructure",
+    description:
+      "Experience a robust trading infrastructure designed for maximum security and reliability, ensuring uninterrupted trading.",
+    icon: "heroicons:server",
+  },
+];
