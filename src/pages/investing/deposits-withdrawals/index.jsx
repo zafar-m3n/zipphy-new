@@ -50,31 +50,31 @@ const Deposits = () => {
   return (
     <>
       <div className="container mx-auto px-4 py-8 space-y-12">
-        <div className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
-          <div className="lg:w-1/2 flex justify-center lg:justify-end relative mt-10 lg:mt-0">
+        <div className="flex flex-col-reverse md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end relative mt-10 lg:mt-0">
             <div className="relative w-full h-[400px] flex items-center justify-center">
               <img
                 src={images.seamless1}
                 alt="Trader 1"
-                className="w-40 lg:w-52 rounded-lg shadow-lg absolute lg:top-[10%] lg:left-[10%] animate-float"
+                className="w-40 lg:w-52 rounded-lg shadow-lg absolute top-[10%] left-[10%] animate-float"
                 style={{ animationDelay: "0s" }}
               />
               <img
                 src={images.seamless3}
                 alt="Trader 3"
-                className="w-44 lg:w-56 rounded-lg shadow-lg lg:bottom-[25%] lg:left-[25%] absolute animate-float"
+                className="w-44 lg:w-56 rounded-lg shadow-lg top-20 left-40 lg:bottom-[25%] lg:left-[25%] absolute animate-float"
                 style={{ animationDelay: "1s" }}
               />
               <img
                 src={images.seamless2}
                 alt="Trader 2"
-                className="w-52 lg:w-64 rounded-lg shadow-lg absolute lg:top-[20%] lg:right-[20%] transform -translate-x-1/2 animate-float"
+                className="w-52 lg:w-64 rounded-lg shadow-lg absolute bottom-20 right-40 lg:top-[20%] lg:right-[20%] transform -translate-x-1/2 animate-float"
                 style={{ animationDelay: "0.5s" }}
               />
               <img
                 src={images.seamless4}
                 alt="Trader 4"
-                className="w-48 lg:w-60 rounded-lg shadow-lg absolute lg:bottom-[10%] lg:left-[60%] animate-float"
+                className="w-48 lg:w-60 rounded-lg shadow-lg absolute bottom-[10%] left-[45%] lg:left-[60%] animate-float"
                 style={{ animationDelay: "1.5s" }}
               />
             </div>
