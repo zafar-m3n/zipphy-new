@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import images from "@/assets";
 import GradientText from "@/components/animated/GradientText";
 import ShinyText from "@/components/animated/ShinyText";
+import AnimatedContent from "@/components/animated/AnimatedContent";
+import SpotlightCard from "@/components/animated/SpotlightCard";
 
 const Deposits = () => {
   const accountData = [
@@ -48,8 +50,17 @@ const Deposits = () => {
   }, []);
 
   return (
-    <>
-      <div className="container mx-auto px-4 py-8 space-y-12">
+    <div className="container mx-auto px-4 py-8 space-y-12">
+      <AnimatedContent
+        distance={100}
+        direction="horizontal"
+        reverse={false}
+        config={{ tension: 50, friction: 25 }}
+        initialOpacity={0.0}
+        animateOpacity
+        scale={1.0}
+        threshold={0.1}
+      >
         <div className="flex flex-col-reverse md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end relative mt-10 lg:mt-0">
             <div className="relative w-full h-[400px] flex items-center justify-center">
@@ -101,6 +112,17 @@ const Deposits = () => {
             </p>
           </div>
         </div>
+      </AnimatedContent>
+      <AnimatedContent
+        distance={100}
+        direction="horizontal"
+        reverse={false}
+        config={{ tension: 50, friction: 25 }}
+        initialOpacity={0.0}
+        animateOpacity
+        scale={1.0}
+        threshold={0.1}
+      >
         <div className="mt-12">
           <ShinyText
             text="Deposit & Withdrawal Details"
@@ -109,7 +131,8 @@ const Deposits = () => {
             className="ms-2 text-2xl md:text-[2rem] italic mb-4"
           />
           <div className="overflow-x-auto">
-            <table className="table-auto w-full border-collapse border border-gray-200 bg-white/20 backdrop-blur-md rounded-lg shadow-lg">
+            <table className="hidden sm:table table-auto w-full border-collapse border border-gray-200 bg-white/20 backdrop-blur-md rounded-lg shadow-lg">
+              {/* Desktop View */}
               <thead>
                 <tr className="bg-[#010101]/80 text-[#0bf40a]">
                   <th className="border border-gray-200 px-4 py-2 text-left">Type</th>
@@ -132,11 +155,28 @@ const Deposits = () => {
                 ))}
               </tbody>
             </table>
+            <div className="sm:hidden space-y-4">
+              {accountData.map((account, index) => (
+                <SpotlightCard borderColor="#0bf40a77" className="relative">
+                  <div className="mb-2">
+                    <strong className="text-[#0bf40a]">Type:</strong> {account.type}
+                  </div>
+                  <div className="mb-2">
+                    <strong className="text-[#0bf40a]">Minimum Deposit:</strong> {account.minimumDeposit}
+                  </div>
+                  <div className="mb-2">
+                    <strong className="text-[#0bf40a]">Minimum Withdrawal:</strong> {account.minimumWithdrawal}
+                  </div>
+                  <div>
+                    <strong className="text-[#0bf40a]">Dep - With - Time Frame:</strong> {account.timeFrame}
+                  </div>
+                </SpotlightCard>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-      {/* <ContactForm /> */}
-    </>
+      </AnimatedContent>
+    </div>
   );
 };
 
