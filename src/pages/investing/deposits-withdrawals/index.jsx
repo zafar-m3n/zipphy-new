@@ -84,17 +84,17 @@ const Deposits = () => {
               colors={["#0bf40a", "#0ae0f4", "#0bf40a", "#0bf40a"]}
               animationSpeed={3}
               showBorder={true}
-              className="px-4 py-2 mx-0"
+              className="px-4 py-2 !mx-0"
             >
               Efficiency
             </GradientText>
             <h1 className="text-3xl md:text-4xl font-bold text-secondary mt-2">Seamless Financial Transactions</h1>
-            <p className="text-gray-300 mt-4">
+            <p className="text-gray-300 mt-4 text-justify">
               At Zipphy, we understand the importance of smooth and secure financial transactions in the world of
               trading. Our platform offers a user-friendly interface for hassle-free deposits and withdrawals. Easily
               fund your account to start trading or withdraw your profits with confidence.
             </p>
-            <p className="text-gray-300 mt-4">
+            <p className="text-gray-300 mt-4 text-justify">
               We provide a variety of secure payment methods, ensuring that your financial transactions are conducted
               seamlessly. Enjoy a smooth experience for both deposits and withdrawals, allowing you to focus on your
               trading strategies with peace of mind.
