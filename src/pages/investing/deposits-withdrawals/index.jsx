@@ -106,7 +106,7 @@ const Deposits = () => {
             text="Deposit & Withdrawal Details"
             textColor="#0bf40abb"
             shineColor="#0bf40a"
-            className="ms-2 text-[2rem] italic mb-4"
+            className="ms-2 text-2xl md:text-[2rem] italic mb-4"
           />
           <div className="overflow-x-auto">
             <table className="table-auto w-full border-collapse border border-gray-200 bg-white/20 backdrop-blur-md rounded-lg shadow-lg">
