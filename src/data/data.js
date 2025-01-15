@@ -216,3 +216,81 @@ export const faqs = [
     answer: "Yes, Zipphy offers a fully responsive platform that works seamlessly on mobile and desktop devices.",
   },
 ];
+
+export const accountData = [
+  {
+    type: "Classic",
+    minimumDeposit: "$100",
+    minimumWithdrawal: "$25",
+    timeFrame: "1-3 Business Days",
+  },
+  {
+    type: "Funded",
+    minimumDeposit: "$1000",
+    minimumWithdrawal: "$500",
+    timeFrame: "1-2 Business Days",
+  },
+  {
+    type: "Trader",
+    minimumDeposit: "$5000",
+    minimumWithdrawal: "$1000",
+    timeFrame: "Within 24 Hours",
+  },
+  {
+    type: "Expert",
+    minimumDeposit: "$10,000",
+    minimumWithdrawal: "$2000",
+    timeFrame: "Within 24 Hours",
+  },
+  {
+    type: "Exclusive",
+    minimumDeposit: "$25,000",
+    minimumWithdrawal: "$5000",
+    timeFrame: "Within 12 Hours",
+  },
+  {
+    type: "Premium",
+    minimumDeposit: "$50,000",
+    minimumWithdrawal: "$10,000",
+    timeFrame: "Instant",
+  },
+];
+
+export const platforms = [
+  {
+    name: "MetaTrader 5 Desktop",
+    description:
+      "Discover endless trading opportunities with MetaTrader 5 Desktop. Designed for serious traders, it provides real-time market access, robust charting tools, and algorithmic trading capabilities. Execute trades seamlessly while managing diverse financial instruments from a single platform. Perfect for traders looking to harness professional-grade tools for maximum precision.",
+    features: [
+      "Real-time market data",
+      "Comprehensive charting tools",
+      "Algorithmic trading support",
+      "Access to trading robots and indicators",
+    ],
+    image: images.mt5web,
+  },
+  {
+    name: "MetaTrader 5 Mobile",
+    description:
+      "Stay ahead of the market wherever you are with MetaTrader 5 Mobile. This platform empowers traders with advanced tools for analysis, real-time market updates, and secure trade execution, all from your smartphone. Enjoy flexibility and control over your portfolio, whether at home or on the move.",
+    features: [
+      "On-the-go trading",
+      "Advanced charting tools",
+      "Real-time notifications",
+      "Available for Android & iOS",
+    ],
+    image: images.mt5mobile,
+  },
+  {
+    name: "WebTrader",
+    description:
+      "Experience the convenience of trading without downloads or installations with our WebTrader. Access powerful tools, analyze market trends, and execute trades securely—all directly from your browser. WebTrader is perfect for traders who value simplicity and accessibility.",
+    features: [
+      "Browser-based trading",
+      "No installations required",
+      "Advanced analysis tools",
+      "Secure execution capabilities",
+    ],
+    image: images.webtrader,
+  },
+];

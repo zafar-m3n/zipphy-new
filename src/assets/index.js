@@ -8,6 +8,9 @@ import seamless1 from "./seamless1.webp";
 import seamless2 from "./seamless2.webp";
 import seamless3 from "./seamless3.webp";
 import seamless4 from "./seamless4.webp";
+import mt5web from "./mt5web.webp";
+import mt5mobile from "./mt5mobile.webp";
+import webtrader from "./webtrader.webp";
 
 const images = {
   amzn,
@@ -20,6 +23,9 @@ const images = {
   seamless2,
   seamless3,
   seamless4,
+  mt5web,
+  mt5mobile,
+  webtrader,
 };
 
 export default images;

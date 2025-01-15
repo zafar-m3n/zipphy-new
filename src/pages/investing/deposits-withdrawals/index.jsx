@@ -1,50 +1,12 @@
 import React, { useEffect } from "react";
 import images from "@/assets";
+import { accountData } from "@/data/data";
 import GradientText from "@/components/animated/GradientText";
 import ShinyText from "@/components/animated/ShinyText";
 import AnimatedContent from "@/components/animated/AnimatedContent";
 import SpotlightCard from "@/components/animated/SpotlightCard";
 
 const Deposits = () => {
-  const accountData = [
-    {
-      type: "Classic",
-      minimumDeposit: "$100",
-      minimumWithdrawal: "$25",
-      timeFrame: "1-3 Business Days",
-    },
-    {
-      type: "Funded",
-      minimumDeposit: "$1000",
-      minimumWithdrawal: "$500",
-      timeFrame: "1-2 Business Days",
-    },
-    {
-      type: "Trader",
-      minimumDeposit: "$5000",
-      minimumWithdrawal: "$1000",
-      timeFrame: "Within 24 Hours",
-    },
-    {
-      type: "Expert",
-      minimumDeposit: "$10,000",
-      minimumWithdrawal: "$2000",
-      timeFrame: "Within 24 Hours",
-    },
-    {
-      type: "Exclusive",
-      minimumDeposit: "$25,000",
-      minimumWithdrawal: "$5000",
-      timeFrame: "Within 12 Hours",
-    },
-    {
-      type: "Premium",
-      minimumDeposit: "$50,000",
-      minimumWithdrawal: "$10,000",
-      timeFrame: "Instant",
-    },
-  ];
-
   useEffect(() => {
     document.title = "Zipphy | Investing";
   }, []);
@@ -54,7 +16,7 @@ const Deposits = () => {
       <AnimatedContent
         distance={100}
         direction="horizontal"
-        reverse={false}
+        reverse={true}
         config={{ tension: 50, friction: 25 }}
         initialOpacity={0.0}
         animateOpacity
@@ -128,7 +90,7 @@ const Deposits = () => {
             text="Deposit & Withdrawal Details"
             textColor="#0bf40abb"
             shineColor="#0bf40a"
-            className="ms-2 text-2xl md:text-[2rem] italic mb-4"
+            className="text-2xl md:text-[2rem] italic mb-4"
           />
           <div className="overflow-x-auto">
             <table className="hidden sm:table table-auto w-full border-collapse border border-gray-200 bg-white/20 backdrop-blur-md rounded-lg shadow-lg">
