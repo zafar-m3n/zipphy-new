@@ -11,6 +11,10 @@ import seamless4 from "./seamless4.webp";
 import mt5web from "./mt5web.webp";
 import mt5mobile from "./mt5mobile.webp";
 import webtrader from "./webtrader.webp";
+import trades from "./5trades.webp";
+import bonus from "./25.webp";
+import doubleDeposit from "./100.webp";
+import card from "./card.webp";
 
 const images = {
   amzn,
@@ -26,6 +30,10 @@ const images = {
   mt5web,
   mt5mobile,
   webtrader,
+  trades,
+  bonus,
+  doubleDeposit,
+  card,
 };
 
 export default images;
