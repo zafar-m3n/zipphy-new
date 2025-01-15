@@ -71,7 +71,7 @@ const Header = () => {
                 </a>
                 {item.children && (
                   <div
-                    className={`absolute left-0 top-full flex flex-col bg-[#ffffff22] backdrop-blur-md shadow-lg mt-2 w-60 rounded-lg transition-transform transition-opacity duration-300 border border-white/20 ${
+                    className={`absolute left-0 top-full flex flex-col bg-[#ffffff55] backdrop-blur-md shadow-lg mt-2 w-60 rounded-lg transition-transform transition-opacity duration-300 border border-white/20 ${
                       openDesktopMenu === index
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 -translate-y-2 pointer-events-none"
