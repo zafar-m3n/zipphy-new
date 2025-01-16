@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="min-h-40 relative w-full bg-[#010101] flex flex-col items-center justify-center overflow-hidden">
-      <div className="w-full absolute inset-0">
+      {/* <div className="w-full absolute inset-0">
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
@@ -17,7 +17,7 @@ export default function Footer() {
           className="w-full h-full"
           particleColor="#0bf40a"
         />
-      </div>
+      </div> */}
       <footer className="p-8 z-50">
         <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col items-start justify-between space-y-4">

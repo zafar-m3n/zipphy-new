@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Squares from "@/components/animated/Squares";
 import Spotlight from "@/components/animated/Spotlight";
 import Footer from "@/components/Footer";
+import { SparklesCore } from "@/components/animated/Sparkles";
 
 const DefaultLayout = () => {
   return (
@@ -16,17 +17,30 @@ const DefaultLayout = () => {
       <header className="sticky top-0 z-50 bg-[#010101]">
         <Header />
       </header>
-      <main className="relative flex-grow">
-        <div className="absolute inset-0 pointer-events-none">
-          <Squares speed={0.5} squareSize={50} direction="up" borderColor="#0bf40a33" hoverFillColor="#131313" />
+      <div className="relative flex-grow">
+        <div className="absolute inset-0">
+          <SparklesCore
+            id="sparkles-main-footer"
+            background="transparent"
+            minSize={0.6}
+            maxSize={1.4}
+            particleDensity={1000}
+            className="w-full h-full"
+            particleColor="#0bf40a"
+          />
         </div>
-        <div className="relative z-10 p-4">
-          <Outlet />
-        </div>
-      </main>
-      <footer className="relative z-10 p-4 text-center bg-[#010101]">
-        <Footer />
-      </footer>
+        <main className="relative z-10">
+          {/* <div className="absolute inset-0 pointer-events-none">
+            <Squares speed={0.5} squareSize={50} direction="up" borderColor="#0bf40a33" hoverFillColor="#131313" />
+          </div> */}
+          <div className="relative z-10 p-4">
+            <Outlet />
+          </div>
+        </main>
+        <footer className="relative z-10 p-4 text-center bg-[#010101]">
+          <Footer />
+        </footer>
+      </div>
     </div>
   );
 };
