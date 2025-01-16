@@ -32,7 +32,7 @@ const FAQs = () => {
           Answers to the most frequently asked questions
         </h2>
         <div className="md:max-w-5xl mx-auto space-y-6">
-          {faqs.map((faq, index) => (
+          {faqs.slice(0, 5).map((faq, index) => (
             <div
               key={index}
               className={`rounded-lg p-6 transition-all duration-300 shadow-md ${

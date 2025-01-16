@@ -198,6 +198,26 @@ export const faqs = [
       "Zipphy is a cutting-edge trading platform that provides access to a wide range of financial markets, including stocks, forex, commodities, and crypto.",
   },
   {
+    question: "How do I sign up?",
+    answer:
+      "To sign up, navigate to the registration page, complete the form, and click 'Open Account.' Check your inbox for a confirmation email titled 'Confirm Your Email Address.' Click the link, and you'll be redirected to our site. Provide the required information and continue. Finally, set up your trading account, and you're ready to begin trading!",
+  },
+  {
+    question: "What are the trading hours?",
+    answer:
+      "Trading is available 24 hours a day, starting from 00:00 on Monday and closing at 23:59 on Friday. The markets remain active throughout this period.",
+  },
+  {
+    question: "What type of account should I choose?",
+    answer:
+      "The ideal account type depends on your chosen trading platform and preferred instruments. Explore our account comparison chart to make an informed decision. You can always open another account if your needs change.",
+  },
+  {
+    question: "How do I deposit funds into my trading account?",
+    answer:
+      "You can deposit funds through the client portal. Simply click on the 'Deposit Funds' tab and choose your preferred funding method. Processing times vary: standard methods may take up to 24 hours, while bank wire transfers may take up to 3 business days, depending on the bank.",
+  },
+  {
     question: "How secure is Zipphy?",
     answer:
       "Security is our top priority. Zipphy uses advanced encryption and fraud protection to ensure your assets and personal information are safe.",
