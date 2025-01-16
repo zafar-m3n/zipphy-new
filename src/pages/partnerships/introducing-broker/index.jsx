@@ -58,24 +58,24 @@ const Broker = () => {
           </div>
         </div>
       </AnimatedContent>
-      <AnimatedContent
-        distance={100}
-        direction="horizontal"
-        reverse={isMobile ? false : true}
-        config={{ tension: 50, friction: 25 }}
-        initialOpacity={0.0}
-        animateOpacity
-        scale={1.0}
-        threshold={0.1}
-      >
-        <div className="text-center">
-          <TextGenerateEffect
-            className="text-center text-2xl md:text-[2rem] font-bold leading-tight tracking-tight text-white"
-            words="What Zipphy Offers You"
-            animated={false}
-          />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            {features.map((feature, index) => (
+      <div className="text-center">
+        <TextGenerateEffect
+          className="text-center text-2xl md:text-[2rem] font-bold leading-tight tracking-tight text-white"
+          words="What Zipphy Offers You"
+          animated={false}
+        />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+          {features.map((feature, index) => (
+            <AnimatedContent
+              distance={100}
+              direction="horizontal"
+              reverse={isMobile ? false : true}
+              config={{ tension: 50, friction: 25 }}
+              initialOpacity={0.0}
+              animateOpacity
+              scale={1.0}
+              threshold={0.1}
+            >
               <SpotlightCard borderColor="#93939377" className="relative">
                 <div className="relative flex flex-col space-y-4">
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -92,10 +92,10 @@ const Broker = () => {
                   <p className="text-sm text-gray-300 text-justify z-10">{feature.description}</p>
                 </div>
               </SpotlightCard>
-            ))}
-          </div>
+            </AnimatedContent>
+          ))}
         </div>
-      </AnimatedContent>
+      </div>
     </div>
   );
 };
