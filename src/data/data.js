@@ -406,3 +406,30 @@ export const referSteps = [
       "When your friend starts trading, both of you will earn rewards. Enjoy perks such as bonuses, discounts, or other exclusive benefits.",
   },
 ];
+
+export const companyInfo = [
+  {
+    title: "About Us",
+    text: "Select a trusted broker—one that stands by you. At Zipphy, we are committed to putting our clients first, providing reliable services, and offering exceptional support. Whether you’re a seasoned trader or new to trading, we prioritize your success and aim to provide the resources and tools you need to thrive.",
+    image: images.about,
+    reverse: false,
+  },
+  {
+    title: "Our Mission",
+    text: "At Zipphy, we aim to empower traders by delivering cutting-edge trading technology, innovative tools, and exceptional support. Our mission is to provide a robust platform where traders can thrive with confidence and achieve their financial aspirations.",
+    image: images.mission,
+    reverse: true,
+  },
+  {
+    title: "Our Vision",
+    text: "Our vision is to lead the industry with innovation and reliability, offering a platform that empowers traders to excel in their financial journeys. We strive to create a seamless trading experience, helping our clients achieve their goals and shape a prosperous future.",
+    image: images.vision,
+    reverse: false,
+  },
+  {
+    title: "Empowerment",
+    text: "At Zipphy, every trade counts! We’re dedicated to empowering our clients with tailored solutions and personalized support to help them unlock their trading potential. Discover trading as it’s meant to be: dependable, transparent, and accessible.",
+    image: images.empowerment,
+    reverse: true,
+  },
+];

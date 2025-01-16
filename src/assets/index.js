@@ -17,6 +17,10 @@ import doubleDeposit from "./100.webp";
 import card from "./card.webp";
 import introducingBroker from "./introducingBroker.webp";
 import referFriend from "./referFriend.webp";
+import about from "./about.webp";
+import mission from "./mission.webp";
+import vision from "./vision.webp";
+import empowerment from "./empowerment.webp";
 
 const images = {
   amzn,
@@ -38,6 +42,10 @@ const images = {
   card,
   introducingBroker,
   referFriend,
+  about,
+  mission,
+  vision,
+  empowerment,
 };
 
 export default images;
