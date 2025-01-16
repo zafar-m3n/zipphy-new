@@ -22,6 +22,7 @@ import mission from "./mission.webp";
 import vision from "./vision.webp";
 import empowerment from "./empowerment.webp";
 import faq from "./faq.webp";
+import contact from "./contact.webp";
 
 const images = {
   amzn,
@@ -48,6 +49,7 @@ const images = {
   vision,
   empowerment,
   faq,
+  contact,
 };
 
 export default images;
