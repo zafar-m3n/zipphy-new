@@ -385,3 +385,24 @@ export const features = [
     icon: "heroicons:server",
   },
 ];
+
+export const referSteps = [
+  {
+    number: 1,
+    title: "Share Your Unique Link",
+    description:
+      "Copy and share your referral link with friends. You can find your unique link in your account dashboard.",
+  },
+  {
+    number: 2,
+    title: "Friend Signs Up",
+    description:
+      "Once your friend clicks on the link, they’ll be guided through the sign-up process and can start trading right away.",
+  },
+  {
+    number: 3,
+    title: "Earn Exclusive Rewards",
+    description:
+      "When your friend starts trading, both of you will earn rewards. Enjoy perks such as bonuses, discounts, or other exclusive benefits.",
+  },
+];

@@ -1,13 +1,17 @@
 import React, { useEffect } from "react";
 import images from "@/assets";
+import { referSteps } from "@/data/data";
 import AnimatedContent from "@/components/animated/AnimatedContent";
 import ShinyText from "@/components/animated/ShinyText";
 import TextGenerateEffect from "@/components/animated/TextGenerate";
+import SpotlightCard from "@/components/animated/SpotlightCard";
+import GradientText from "@/components/animated/GradientText";
 import useWidth from "@/hooks/useWidth";
 
 const ReferFriend = () => {
   const { width, breakpoints } = useWidth();
   const isMobile = width < breakpoints.md;
+
   useEffect(() => {
     document.title = "Zipphy | Partnerships";
   }, []);
@@ -70,46 +74,31 @@ const ReferFriend = () => {
               Help your friends get started while earning rewards for yourself. It's a win-win!
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="relative text-center">
-                <div className="absolute inset-0 text-9xl font-bold text-gray-200 -z-10 flex items-center justify-center">
-                  1
-                </div>
-                <h3 className="text-xl font-bold text-secondary mt-4 relative">Share Your Unique Link</h3>
-                <p className="text-gray-600 mt-2 relative">
-                  Copy and share your referral link with friends. You can find your unique link in your account
-                  dashboard.
-                </p>
-              </div>
-
-              <div className="relative text-center">
-                <div className="absolute inset-0 text-9xl font-bold text-gray-200 -z-10 flex items-center justify-center">
-                  2
-                </div>
-                <h3 className="text-xl font-bold text-secondary mt-4 relative">Friend Signs Up</h3>
-                <p className="text-gray-600 mt-2 relative">
-                  Once your friend clicks on the link, they’ll be guided through the sign-up process and can start
-                  trading right away.
-                </p>
-              </div>
-
-              {/* Step 3 */}
-              <div className="relative text-center">
-                <div className="absolute inset-0 text-9xl font-bold text-gray-200 -z-10 flex items-center justify-center">
-                  3
-                </div>
-                <h3 className="text-xl font-bold text-secondary mt-4 relative">Earn Exclusive Rewards</h3>
-                <p className="text-gray-600 mt-2 relative">
-                  When your friend starts trading, both of you will earn rewards. Enjoy perks such as bonuses,
-                  discounts, or other exclusive benefits.
-                </p>
-              </div>
+              {referSteps.map((step) => (
+                <SpotlightCard borderColor="#0bf40a77" spotlightColor="#93939377" className="relative">
+                  <div className="relative flex flex-col space-y-6">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <GradientText
+                        colors={["#0bf40a", "#0ae0f4", "#0bf40a", "#0bf40a"]}
+                        animationSpeed={3}
+                        showBorder={false}
+                        className="px-4 py-2 !mx-0 text-9xl opacity-50"
+                      >
+                        {step.number}
+                      </GradientText>
+                    </div>
+                    <h3 className="text-xl font-semibold z-10 bg-[#010101]/50">{step.title}</h3>
+                    <p className="text-sm text-gray-300 text-justify z-10">{step.description}</p>
+                  </div>
+                </SpotlightCard>
+              ))}
             </div>
             <div className="flex justify-center items-center">
               <button
                 onClick={() => window.open("https://app.zipphy.com/signup", "_blank")}
-                className="self-center flex items-center space-x-1 border border-[#0bf40a33] px-4 py-2 rounded-lg text-white bg-[#0bf40a11] backdrop-blur-lg transition-all duration-300 hover:bg-[#0bf40a44] hover:shadow-[0_0_15px_#0bf40a] hover:border-[#0bf40a]"
+                className="bg-[#ffffff33] text-white px-4 py-2 rounded-lg backdrop-blur-lg border border-white/20 transition-all duration-300 hover:bg-[#ffffff55] hover:border-white hover:shadow-[0_0_15px_#ffffff]"
               >
-                <p>Register Now</p>
+                Register Now
               </button>
             </div>
           </div>
