@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Crypto = () => {
+  useEffect(() => {
+    document.title = "Zipphy | Markets";
+  }, []);
   return <div>Crypto</div>;
 };
 
