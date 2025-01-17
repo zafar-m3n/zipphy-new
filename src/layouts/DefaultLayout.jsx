@@ -1,7 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "@/components/Header";
-import Squares from "@/components/animated/Squares";
 import Spotlight from "@/components/animated/Spotlight";
 import Footer from "@/components/Footer";
 import { SparklesCore } from "@/components/animated/Sparkles";
@@ -30,9 +29,6 @@ const DefaultLayout = () => {
           />
         </div>
         <main className="relative z-10">
-          {/* <div className="absolute inset-0 pointer-events-none">
-            <Squares speed={0.5} squareSize={50} direction="up" borderColor="#0bf40a33" hoverFillColor="#131313" />
-          </div> */}
           <div className="relative z-10 p-4">
             <Outlet />
           </div>

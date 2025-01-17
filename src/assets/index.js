@@ -23,6 +23,11 @@ import vision from "./vision.webp";
 import empowerment from "./empowerment.webp";
 import faq from "./faq.webp";
 import contact from "./contact.webp";
+import bankTransfer from "./banktransfer.webp";
+import gpay from "./gpay.webp";
+import mastercard from "./mastercard.webp";
+import upi from "./upi.webp";
+import visa from "./visa.webp";
 
 const images = {
   amzn,
@@ -50,6 +55,11 @@ const images = {
   empowerment,
   faq,
   contact,
+  bankTransfer,
+  gpay,
+  mastercard,
+  upi,
+  visa,
 };
 
 export default images;

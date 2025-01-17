@@ -8,6 +8,10 @@ export default {
           "0%": { "background-position": "100%" },
           "100%": { "background-position": "-100%" },
         },
+        slide: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
         spotlight: {
           "0%": {
             opacity: 0,
@@ -37,6 +41,7 @@ export default {
         },
       },
       animation: {
+        slider: "slide 15s linear infinite",
         shine: "shine 5s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         gradient: "gradient 8s linear infinite",

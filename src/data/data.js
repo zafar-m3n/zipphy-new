@@ -453,3 +453,26 @@ export const companyInfo = [
     reverse: true,
   },
 ];
+
+export const paymentMethods = [
+  {
+    name: "Bank Transfer",
+    image: images.bankTransfer,
+  },
+  {
+    name: "Google Pay",
+    image: images.gpay,
+  },
+  {
+    name: "Mastercard",
+    image: images.mastercard,
+  },
+  {
+    name: "UPI",
+    image: images.upi,
+  },
+  {
+    name: "Visa",
+    image: images.visa,
+  },
+];

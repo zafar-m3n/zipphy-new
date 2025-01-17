@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import JoinUs from "./components/JoinUs";
+import PaymentMethods from "@/components/PaymentMethods";
 
 const AccountTypes = () => {
   useEffect(() => {
@@ -7,8 +8,9 @@ const AccountTypes = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8 md:px-8 space-y-12">
+    <div className="container mx-auto px-4 py-8 md:px-8">
       Account Types 3*2 grid
+      <PaymentMethods />
       <JoinUs />
     </div>
   );
