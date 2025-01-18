@@ -33,6 +33,11 @@ import forex from "./forex.webp";
 import cryptocurrencies from "./cryptocurrencies.webp";
 import indices from "./indices.webp";
 import commodities from "./commodities.webp";
+import Mstocks from "./m-stocks.webp";
+import Mcommodities from "./m-commodities.webp";
+import Mcrypto from "./m-crypto.webp";
+import Mindices from "./m-indices.webp";
+import Mforex from "./m-forex.webp";
 
 const images = {
   amzn,
@@ -70,6 +75,11 @@ const images = {
   cryptocurrencies,
   indices,
   commodities,
+  Mstocks,
+  Mcommodities,
+  Mcrypto,
+  Mindices,
+  Mforex,
 };
 
 export default images;
