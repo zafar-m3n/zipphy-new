@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { navMenu } from "@/data/data";
 import logoWhite from "@/assets/logo-white.png";
-import iconWhite from "@/assets/icon-white.png";
 import useWidth from "@/hooks/useWidth";
 import Icon from "@/components/ui/Icon";
 import AnimatedContent from "@/components/animated/AnimatedContent";
