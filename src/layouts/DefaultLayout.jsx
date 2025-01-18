@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "@/components/Header";
 import Spotlight from "@/components/animated/Spotlight";
+import TickerTape from "@/components/TickerTape";
 import Footer from "@/components/Footer";
 import { SparklesCore } from "@/components/animated/Sparkles";
 
@@ -13,6 +14,7 @@ const DefaultLayout = () => {
         <Spotlight className="top-40 left-full h-[80vh] w-[50vw]" fill="#0bf40a" />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="#eff00f" />
       </div>
+      <TickerTape />
       <header className="sticky top-0 z-50 bg-[#010101]">
         <Header />
       </header>

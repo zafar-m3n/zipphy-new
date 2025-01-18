@@ -7,6 +7,7 @@ import Markets from "./components/Markets";
 import WhyZipphy from "./components/WhyZipphy";
 import FAQs from "./components/FAQs";
 import JoinUs from "./components/JoinUs";
+import MiniChartRow from "./components/MiniChartRow";
 
 const HomePage = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const HomePage = () => {
       <HeroSection />
       <Welcome />
       <HowItWorks />
+      <MiniChartRow />
       <WhyZipphy />
       <Stats />
       <Markets />

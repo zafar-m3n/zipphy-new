@@ -2,6 +2,7 @@ import React from "react";
 import AnimatedContent from "@/components/animated/AnimatedContent";
 import TiltedScroll from "@/components/animated/TiltedScroll";
 import { useNavigate } from "react-router-dom";
+import MarketData from "@/components/MarketData";
 
 const Markets = () => {
   const navigate = useNavigate();
@@ -51,6 +52,7 @@ const Markets = () => {
             <TiltedScroll items={items} />
           </div>
         </div>
+        <MarketData />
       </section>
     </AnimatedContent>
   );
