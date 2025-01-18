@@ -28,6 +28,11 @@ import gpay from "./gpay.webp";
 import mastercard from "./mastercard.webp";
 import upi from "./upi.webp";
 import visa from "./visa.webp";
+import stocks from "./stocks.webp";
+import forex from "./forex.webp";
+import cryptocurrencies from "./cryptocurrencies.webp";
+import indices from "./indices.webp";
+import commodities from "./commodities.webp";
 
 const images = {
   amzn,
@@ -60,6 +65,11 @@ const images = {
   mastercard,
   upi,
   visa,
+  stocks,
+  forex,
+  cryptocurrencies,
+  indices,
+  commodities,
 };
 
 export default images;

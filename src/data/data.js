@@ -476,3 +476,91 @@ export const paymentMethods = [
     image: images.visa,
   },
 ];
+
+export const educations = [
+  {
+    title: "How To Trade Stocks? ",
+    content: [
+      "Investing in stocks entails purchasing stock in a publicly traded firm. The firm’s stock is made up of those little shares, and by investing in it, you’re betting that the company will develop and perform well over time.",
+      "Your shares may become more valuable as a result of this, and other investors may be ready to purchase them from you at a higher price than you paid for them. That means if you chose to sell them, you may make a profit.",
+    ],
+    subtitle: "Here are the important concepts to master before you get started:",
+    features: [
+      "Learn how to evaluate stocks using fundamental & technical measurements and ideas.",
+      "Diversify your investment portfolio.",
+      "Invest exclusively in companies that you are familiar with. Until you've gotten the hang of investing, stay away from high-volatility equities.",
+      "Avoid penny stocks at all costs.",
+    ],
+    conclusion: [
+      "It’s a good idea to understand the notion of diversity, which means that your portfolio should include a number of various sorts of firms. However, excessive variety should be avoided. Stick to industries you’re familiar with, and if you discover you’re excellent at (or comfortable with) appraising a specific sort of stock, there’s nothing wrong with that area accounting for a sizable portion of your portfolio.",
+      "If you wish to invest in individual stocks, you need learn how to analyze them using some of the most fundamental methods. A good place to start is with our guide to value investing. We can assist you in locating stocks with good values. Our guide to growth investing is a wonderful place to start if you want to add some exciting long-term growth potential to your portfolio.",
+    ],
+    image: images.stocks,
+  },
+  {
+    title: "How To Trade Forex? ",
+    content: [
+      "The foreign exchange market, generally referred to as “forex” or “FX,” is the world’s largest financial market. The foreign exchange market (FX market) is a worldwide, decentralized market where the world’s currencies are traded. Because exchange rates fluctuate by the second, the market is always in motion.",
+      "The foreign currency market, with its $6.6 TRILLION per day trading activity, seems extremely massive when compared to the “scanty” $23.4 billion per day volume of the New York Stock Exchange (NYSE). Don’t get excited early, we will take you through the proper guide about how trade this market. Let’s begin with understanding the pip” value.",
+    ],
+    subtitle: "Pip Value:",
+    features: [
+      "A “pip” is a unit of measurement used to describe the difference in value between two currencies. You’ve undoubtedly heard the phrases “pips,” “points,” “pipettes,” and “lots” used, and now we’ll explain what they mean and how their values are computed.",
+      "A 0.0001 USD increase in value equals ONE PIP if EUR/USD increases from 1.1050 to 1.1051. The last decimal point of a pricing quote is commonly referred to as a pip.",
+      "There are rare outliers, such as Japanese yen pairs, which go to four decimal points (they go out to two decimal places). For example, it is 0.0001 for EUR/USD and 0.01 for USD/JPY.",
+    ],
+    conclusion: [],
+    image: images.forex,
+  },
+  {
+    title: "How To Trade Cryptocurrencies? ",
+    content: [
+      "Cryptocurrencies let you to exchange them for goods and services in the same way that traditional money allows you to, or trade them for profit. Digital currencies, on the other hand, are decentralized, and no single body controls their issue, unlike traditional money, which is issued and managed by governments.",
+      "The crypto market is a large market with many distinct trading systems. As a result, it would be ideal if you could comprehend the industry from your perspective. Crypto exchanges, cryptocurrencies, and trading platforms should all be included in your investigation. TradeProNet is here to provide you the best experience of investing with vast range of trading tools and techniques to help you avoid loses. It’s a good idea to weigh the benefits and drawbacks of investing in such a broad market. You can start trading if you’re satisfied with the information you’ve acquired.",
+    ],
+    subtitle: "",
+    features: [
+      "In recent years, bitcoin trading has become a worldwide phenomenon. Almost everyone trades, and its human nature to want to follow in the footsteps of others. Day trading is a type of cryptocurrency trading that resembles the stock market in traditional finance.",
+      "If you decide to engage in day trading, keep an eye out for FOMO (fear of missing out), which is the fastest way to lose money. When you’re under duress, you should avoid trading.",
+      "Learn different technical techniques to read the chart and to identify trends. Acquiring knowledge of supply and demand would help you sharpen your strategy.",
+    ],
+    conclusion: [
+      "In the present market, there are over 18,000 cryptocurrencies in circulation. Choose a crypto currency based on its performance and market longevity parameters. You want to trade a currency that will provide you with respectable long-term profits. Avoid trading initial coin offers (ICOs) as a newbie since you don’t know their success rate or legitimacy. TradeProNet is believed to be the best platform to enhance your experience of investing in cryptocurrencies.",
+      "“Don’t put all your eggs in one basket,” as the expression goes, and this concept applies to both digital assets and equities. Investing in digital assets has the potential to be profitable, but it also has the potential to be risky. Diversifying your holdings among numerous cryptocurrencies allows you to limit your losses if the price of one cryptocurrency falls.",
+    ],
+    image: images.cryptocurrencies,
+  },
+  {
+    title: "How To Trade Indices? ",
+    content: [
+      "Investors use index trading to acquire exposure to financial markets without having to study and invest in individual firm equities. Trading stock market indices is a risk-reduction strategy for stock traders. You trade an index, or a collection of shares, rather than buying and selling individual firm shares.",
+      "Many individual investors, especially those saving for retirement, like to trade indexes in their investment accounts.",
+      "Investors can gain exposure to a variety of firms by trading indexes. While the stock values of certain companies decline over time, the stock prices of others rise. Diversification helps to balance out volatility extremes.",
+    ],
+    subtitle: "",
+    features: [
+      "Each trading session, index values vary, but they do not lose or gain significant amounts unless there is a substantial shift, such as a market crash, geopolitical incident, or natural disaster.",
+      "Indices are safer to invest in than individual equities. You may lose money if you invest in a company shares and the firm goes bankrupt. However, if a firm in an index goes bankrupt, the next largest company outside the index can take its position.",
+      "Index investing, on the other hand, reduces the amount of money you may make from a high-growth firm. Individual growth companies can outperform an index by a big margin, but they come with a larger risk.",
+      "The top five indices by volume are the NASDAQ100, S&P 500, Hang Seng, FTSE 100, and DIJA. Trading indexes requires deep understanding of market conditions, although it lowers your risk because of the broader span of stock companies but understanding the key fundamentals is essential for profitable index trading.",
+    ],
+    conclusion: [],
+    image: images.indices,
+  },
+  {
+    title: "How To Trade Commodities? ",
+    content: [
+      "Raw resources such as corn, flour, oil, and metals are examples of commodity products. The purchasing and selling of these basic resources are known as commodities trading. It occasionally entails the physical exchange of items. However, futures contracts, in which you commit to purchase or sell a commodity for a specific price at a specific date, are increasingly common.",
+      "Commodities may help diversify your portfolio while also acting as an inflation buffer. Commodities, on the other hand, are extremely volatile. Commodity trading is challenging because unpredictable factors such as weather and political unrest can have a significant influence on pricing.Traders of commodities make bets on the direction in which the price of the commodity will change. You purchase futures or go long if you believe the price of a commodity will rise. You sell futures or go short if you believe the price will fall.",
+    ],
+    subtitle: "",
+    features: [
+      "Buying shares of the firms that generate commodities is another option to invest in commodities. You may invest in metal stocks, energy companies, or meat stocks, for example.",
+      "The value of a commodity-producing firm does not always grow or decline in tandem with the value of the commodity it produces. Sure, when crude oil prices increase, an oil production business benefits, and when they fall, it suffers. But the amount of oil it has in its reserves and whether it has profitable supply contracts with high-demand buyers are even more crucial.",
+      "Commodity trading is a high-reward, high-risk venture. It might be a good way to protect your assets from a bad market or inflation.",
+      "However, you should only consider it if you have a thorough grasp of the commodities market’s supply and demand dynamics. This entails understanding previous pricing trends as well as current events. If you’re just getting started, minimize your utilization of margin to lessen your risk.",
+    ],
+    conclusion: [],
+    image: images.commodities,
+  },
+];
