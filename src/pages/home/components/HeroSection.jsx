@@ -17,11 +17,11 @@ const HeroSection = () => {
   return (
     <div className="container mx-auto px-6 md:px-12 lg:px-16 flex flex-col justify-center items-center text-center space-y-6 md:h-[calc(100vh-100px)]">
       <h2 className="uppercase tracking-widest text-xs text-center text-green-100 flex items-center space-x-2 max-w-lg">
-        <span>Our Capital, Your</span>
         <span className="flex items-center space-x-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-2 py-1 shadow-md">
           <Icon icon="game-icons:abstract-119" size={16} className="text-[#0bf40a]" />
-          <p className="text-white font-medium">Success</p>
+          <p className="text-white font-medium">Profits</p>
         </span>
+        <span>just a click away</span>
       </h2>
       <TextGenerateEffect
         key={currentTitleIndex}

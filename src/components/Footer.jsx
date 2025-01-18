@@ -119,7 +119,7 @@ export default function Footer() {
         </div>
       </footer>
 
-      <div className="container mx-auto flex flex-col-reverse md:flex-row justify-between items-center py-4 z-50">
+      <div className="container mx-auto flex flex-col-reverse md:flex-row justify-between items-center py-4 z-50 border-t border-[#f2f2f2]">
         <p>&copy; {new Date().getFullYear()} Zipphy.com. All Rights Reserved.</p>
         <div className="flex space-x-4">
           <Link to="/terms" className="hover:text-[#0bf40a]">

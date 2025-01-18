@@ -39,9 +39,14 @@ const Header = () => {
           scale={1.0}
           threshold={0.1}
         >
-          <Link to="/" className="hover:text-gray-400">
-            <img src={isMobile ? iconWhite : logoWhite} alt="Zipphy Logo" className="h-20" />
-          </Link>
+          <div className="flex items-center">
+            <Link to="/" className="hover:text-gray-400">
+              <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
+            </Link>
+            <p className="items-center hidden md:flex text-sm text-[#0bf40a] me-6">
+              <span className="text-2xl italic me-1">18 </span> years
+            </p>
+          </div>
         </AnimatedContent>
 
         <AnimatedContent
@@ -158,13 +163,12 @@ const Header = () => {
         <ul className="flex flex-col space-y-1 p-4">
           {navMenu.map((item, index) => (
             <li key={index} className="relative">
-              {/* If item has children, use button; otherwise, use anchor */}
               {item.children ? (
                 <button
                   onClick={() => {
                     setOpenDesktopMenu((prevState) => (prevState === index ? null : index));
                   }}
-                  className="flex items-center justify-between w-full text-white px-4 py-2 rounded-lg bg-[#ffffff22] hover:bg-[#ffffff33] transition-colors"
+                  className="flex items-center justify-between w-full text-white px-4 py-2 rounded-lg bg-[#ffffff77] hover:bg-[#ffffff99] transition-colors"
                 >
                   <span>{item.title}</span>
                   <Icon icon={`heroicons:${openDesktopMenu === index ? "chevron-up" : "chevron-down"}`} width={16} />
@@ -172,13 +176,12 @@ const Header = () => {
               ) : (
                 <a
                   href={item.link}
-                  className="flex items-center justify-between w-full text-white px-4 py-2 rounded-lg bg-[#ffffff22] hover:bg-[#ffffff33] transition-colors"
+                  className="flex items-center justify-between w-full text-white px-4 py-2 rounded-lg bg-[#ffffff77] hover:bg-[#ffffff99] transition-colors"
                 >
                   <span>{item.title}</span>
                 </a>
               )}
 
-              {/* Submenu for items with children */}
               {item.children && (
                 <div
                   className={`overflow-hidden transition-all duration-300 ${
@@ -187,7 +190,7 @@ const Header = () => {
                       : "max-h-0 opacity-0 mt-0 pointer-events-none"
                   }`}
                 >
-                  <ul className="flex flex-col bg-[#ffffff22] rounded-lg shadow-inner">
+                  <ul className="flex flex-col bg-[#ffffff77] rounded-lg shadow-inner">
                     {item.children.map((child, childIndex) => (
                       <li key={childIndex}>
                         <a
