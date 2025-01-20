@@ -38,6 +38,14 @@ import Mcommodities from "./m-commodities.webp";
 import Mcrypto from "./m-crypto.webp";
 import Mindices from "./m-indices.webp";
 import Mforex from "./m-forex.webp";
+import jpms from "./jpms.webp";
+import barclays from "./barclays.webp";
+import boa from "./boa.webp";
+import citibank from "./citibank.webp";
+import dbank from "./dbank.webp";
+import gsachs from "./gsachs.webp";
+import hsbc from "./hsbc.webp";
+import wfargo from "./wfargo.webp";
 
 const images = {
   amzn,
@@ -80,6 +88,14 @@ const images = {
   Mcrypto,
   Mindices,
   Mforex,
+  jpms,
+  barclays,
+  boa,
+  citibank,
+  dbank,
+  gsachs,
+  hsbc,
+  wfargo,
 };
 
 export default images;

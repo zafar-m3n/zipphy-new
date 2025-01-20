@@ -62,26 +62,37 @@ export const heroContent = [
 
 export const stats = [
   {
-    stat: "51966",
+    stat: "139505",
     title: "Total Clients",
     suffix: "+",
     separator: ",",
   },
   {
-    stat: "72",
+    stat: "81",
     title: "Client Profit Percentage",
     suffix: "%",
   },
   {
-    stat: "150",
+    stat: "250",
     title: "IB Brokers",
   },
   {
-    stat: "1906",
+    stat: "20313",
     title: "Premium Account Holders",
     suffix: "+",
     separator: ",",
   },
+];
+
+export const banks = [
+  { name: "JPMorgan Chase", logo: images.jpms },
+  { name: "Bank of America", logo: images.boa },
+  { name: "HSBC", logo: images.hsbc },
+  { name: "Citibank", logo: images.citibank },
+  { name: "Wells Fargo", logo: images.wfargo },
+  { name: "Goldman Sachs", logo: images.gsachs },
+  { name: "Deutsche Bank", logo: images.dbank },
+  { name: "Barclays", logo: images.barclays },
 ];
 
 export const stocks = [
