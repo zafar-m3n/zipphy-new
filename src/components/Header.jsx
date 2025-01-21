@@ -167,7 +167,7 @@ const Header = () => {
                   onClick={() => {
                     setOpenDesktopMenu((prevState) => (prevState === index ? null : index));
                   }}
-                  className="flex items-center justify-between w-full text-white px-4 py-2 rounded-lg bg-[#ffffff77] hover:bg-[#ffffff99] transition-colors"
+                  className="flex items-center justify-between w-full text-[#010101] px-4 py-2 rounded-lg bg-[#f2f2f2] transition-colors"
                 >
                   <span>{item.title}</span>
                   <Icon icon={`heroicons:${openDesktopMenu === index ? "chevron-up" : "chevron-down"}`} width={16} />
@@ -175,7 +175,7 @@ const Header = () => {
               ) : (
                 <a
                   href={item.link}
-                  className="flex items-center justify-between w-full text-white px-4 py-2 rounded-lg bg-[#ffffff77] hover:bg-[#ffffff99] transition-colors"
+                  className="flex items-center justify-between w-full text-[#010101] px-4 py-2 rounded-lg bg-[#f2f2f2] transition-colors"
                 >
                   <span>{item.title}</span>
                 </a>
@@ -189,7 +189,7 @@ const Header = () => {
                       : "max-h-0 opacity-0 mt-0 pointer-events-none"
                   }`}
                 >
-                  <ul className="flex flex-col bg-[#ffffff77] rounded-lg shadow-inner">
+                  <ul className="flex flex-col bg-[#01010122] rounded-lg shadow-inner">
                     {item.children.map((child, childIndex) => (
                       <li key={childIndex}>
                         <a
