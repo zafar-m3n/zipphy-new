@@ -189,7 +189,7 @@ const Header = () => {
                       : "max-h-0 opacity-0 mt-0 pointer-events-none"
                   }`}
                 >
-                  <ul className="flex flex-col bg-[#01010122] rounded-lg shadow-inner">
+                  <ul className="flex flex-col bg-[#01010199] rounded-lg shadow-inner">
                     {item.children.map((child, childIndex) => (
                       <li key={childIndex}>
                         <a
