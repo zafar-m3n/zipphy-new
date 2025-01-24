@@ -109,10 +109,10 @@ const Header = () => {
         threshold={0.1}
       >
         <div className="flex items-center space-x-4">
-          <div className="flex space-x-4">
+          <div className="flex space-x-2 md:space-x-4">
             <button
               onClick={() => window.open("https://app.zipphy.com/login", "_blank")}
-              className="hidden md:block bg-[#ffffff33] text-white px-4 py-2 rounded-lg backdrop-blur-lg border border-white/20 transition-all duration-300 hover:bg-[#ffffff55] hover:border-white hover:shadow-[0_0_15px_#ffffff]"
+              className="bg-[#ffffff33] text-white px-4 py-2 rounded-lg backdrop-blur-lg border border-white/20 transition-all duration-300 hover:bg-[#ffffff55] hover:border-white hover:shadow-[0_0_15px_#ffffff] text-sm md:text-base"
             >
               Login
             </button>
@@ -120,8 +120,8 @@ const Header = () => {
               onClick={() => window.open("https://app.zipphy.com/signup", "_blank")}
               className="flex items-center space-x-1 border border-[#0bf40a33] px-4 py-2 rounded-lg text-white bg-[#0bf40a11] backdrop-blur-lg transition-all duration-300 hover:bg-[#0bf40a44] hover:shadow-[0_0_15px_#0bf40a] hover:border-[#0bf40a]"
             >
-              <p>Register</p>
-              <Icon icon="heroicons:arrow-top-right-on-square" width={16} />
+              <p className="text-sm md:text-base">Register</p>
+              <Icon icon="heroicons:arrow-top-right-on-square" width={isMobile ? 12 : 16} />
             </button>
           </div>
 
