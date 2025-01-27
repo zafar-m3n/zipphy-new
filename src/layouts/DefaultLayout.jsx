@@ -25,7 +25,7 @@ const DefaultLayout = () => {
             background="transparent"
             minSize={0.6}
             maxSize={1.4}
-            particleDensity={1000}
+            particleDensity={500}
             className="w-full h-full"
             particleColor="#0bf40a"
           />
