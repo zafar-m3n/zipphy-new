@@ -253,6 +253,12 @@ export const accountData = [
     type: "Classic",
     minimumDeposit: "$100",
     minimumWithdrawal: "$25",
+    timeFrame: "1-5 Business Days",
+  },
+  {
+    type: "Islamic",
+    minimumDeposit: "$200",
+    minimumWithdrawal: "$50",
     timeFrame: "1-3 Business Days",
   },
   {
