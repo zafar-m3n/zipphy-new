@@ -50,7 +50,7 @@ const TextGenerateEffect = ({
           return (
             <motion.span
               key={`${word}-${idx}`}
-              className={`${isMultiColored ? "text-green-400" : "dark:text-white text-black"} opacity-0`}
+              className={`${isMultiColored ? "text-green-400" : "text-white"} opacity-0`}
               initial={{ opacity: 0, filter: "blur(10px)" }}
               animate={{ opacity: 1, filter: "blur(0px)" }}
               transition={{ duration: duration, delay: idx * 0.2 }}
@@ -66,9 +66,7 @@ const TextGenerateEffect = ({
   return (
     <div className={`font-bold`}>
       <div className="mt-4">
-        <div className={`dark:text-white text-black text-2xl leading-snug tracking-wide ${className}`}>
-          {renderWords()}
-        </div>
+        <div className={`text-white text-2xl leading-snug tracking-wide ${className}`}>{renderWords()}</div>
       </div>
     </div>
   );

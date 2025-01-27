@@ -5,8 +5,11 @@ import Spotlight from "@/components/animated/Spotlight";
 import TickerTape from "@/components/TickerTape";
 import Footer from "@/components/Footer";
 import { SparklesCore } from "@/components/animated/Sparkles";
+import useWidth from "@/hooks/useWidth";
 
 const DefaultLayout = () => {
+  const { width, breakpoints } = useWidth();
+  const isMobile = width < breakpoints.md;
   return (
     <div className="relative flex flex-col min-h-screen bg-[#010101] text-[#f2f2f2] max-w-screen overflow-x-hidden">
       <div>
@@ -25,7 +28,7 @@ const DefaultLayout = () => {
             background="transparent"
             minSize={0.6}
             maxSize={1.4}
-            particleDensity={500}
+            particleDensity={isMobile ? 150 : 350}
             className="w-full h-full"
             particleColor="#0bf40a"
           />
