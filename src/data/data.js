@@ -579,7 +579,7 @@ export const educations = [
 export const accounts = [
   {
     name: "Classic",
-    price: "$200",
+    price: "$100",
     features: [
       "Daily Analysis",
       "Leverage 1:100",
@@ -590,6 +590,23 @@ export const accounts = [
       "Prompt Withdrawals",
       "Premium Support",
       "Trading Central",
+    ],
+    cta: "Register Now!",
+  },
+  {
+    name: "Islamic",
+    price: "$200",
+    features: [
+      "No Swap Charges",
+      "Shariah-Compliant Trading",
+      "Daily Analysis",
+      "Leverage 1:100",
+      "Events and Trades",
+      "Spreads – Fixed",
+      "Stock Trading",
+      "Prompt Withdrawals",
+      "24/7 Customer Support",
+      "Basic Trading Central",
     ],
     cta: "Register Now!",
   },
