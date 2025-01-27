@@ -63,11 +63,8 @@ const MarketData = () => {
   }, []);
 
   return (
-    <div className="tradingview-widget-container w-full max-w-5xl mx-auto my-8 h-full overflow-y-auto">
-      <div
-        id="tradingview-market-data-widget"
-        className="tradingview-widget-container__widget"
-      ></div>
+    <div className="tradingview-widget-container w-full max-w-5xl mx-auto my-8 h-full overflow-y-auto pointer-events-none">
+      <div id="tradingview-market-data-widget" className="tradingview-widget-container__widget"></div>
     </div>
   );
 };

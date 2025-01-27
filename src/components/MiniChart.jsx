@@ -29,7 +29,7 @@ const MiniChart = ({ symbol = "FX:EURUSD" }) => {
 
   return (
     <div
-      className="tradingview-widget-container mx-auto w-full rounded-lg shadow-3xl overflow-hidden bg-[#010101]"
+      className="tradingview-widget-container mx-auto w-full rounded-lg shadow-3xl overflow-hidden bg-[#010101] pointer-events-none"
       style={{ minHeight: "220px" }}
     >
       <div id={`tradingview-mini-chart-${symbol}`} className="tradingview-widget-container__widget h-full"></div>
