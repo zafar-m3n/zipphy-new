@@ -85,13 +85,14 @@ export const stats = [
 ];
 
 export const banks = [
-  { name: "JPMorgan Chase", logo: images.jpms },
+  { name: "RAK Bank", logo: images.rak },
   { name: "Bank of America", logo: images.boa },
   { name: "HSBC", logo: images.hsbc },
   { name: "Citibank", logo: images.citibank },
   { name: "Wells Fargo", logo: images.wfargo },
+  { name: "Abu Dhabi Commercial Bank", logo: images.adbc },
   { name: "Goldman Sachs", logo: images.gsachs },
-  { name: "Deutsche Bank", logo: images.dbank },
+  { name: "First Abu Dhabi Bank", logo: images.fab },
   { name: "Barclays", logo: images.barclays },
 ];
 
@@ -706,5 +707,33 @@ export const accounts = [
       "24/7 Customer Support",
     ],
     cta: "Register Now!",
+  },
+];
+
+export const awards = [
+  {
+    year: 2023,
+    title: "Best multi-asset platform",
+    event: "Forex Expo Dubai",
+  },
+  {
+    year: 2024,
+    title: "Best affiliate program",
+    event: "Fazzaco Business Awards",
+  },
+  {
+    year: 2024,
+    title: "Best fintech broker",
+    event: "Wiki Finance Expo",
+  },
+  {
+    year: 2022,
+    title: "Most Innovative broker",
+    event: "Forex Traders Summit",
+  },
+  {
+    year: 2023,
+    title: "Best FX trading platform",
+    event: "Forex Expo Dubai",
   },
 ];

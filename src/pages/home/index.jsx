@@ -9,6 +9,7 @@ import FAQs from "./components/FAQs";
 import JoinUs from "./components/JoinUs";
 import MiniChartRow from "./components/MiniChartRow";
 import ClientSlider from "./components/ClientsSlider";
+import AwardsSection from "./components/AwardsSection";
 
 const HomePage = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const HomePage = () => {
     <div>
       <HeroSection />
       <Welcome />
+      <AwardsSection />
       <HowItWorks />
       <MiniChartRow />
       <WhyZipphy />

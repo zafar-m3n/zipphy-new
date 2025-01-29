@@ -46,6 +46,9 @@ import dbank from "./dbank.webp";
 import gsachs from "./gsachs.webp";
 import hsbc from "./hsbc.webp";
 import wfargo from "./wfargo.webp";
+import adbc from "./adbc.webp";
+import fab from "./fab.webp";
+import rak from "./rak.webp";
 
 const images = {
   amzn,
@@ -96,6 +99,9 @@ const images = {
   gsachs,
   hsbc,
   wfargo,
+  adbc,
+  fab,
+  rak,
 };
 
 export default images;
