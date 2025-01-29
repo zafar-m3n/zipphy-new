@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "@/components/Header";
 import Spotlight from "@/components/animated/Spotlight";
@@ -10,6 +10,30 @@ import useWidth from "@/hooks/useWidth";
 const DefaultLayout = () => {
   const { width, breakpoints } = useWidth();
   const isMobile = width < breakpoints.md;
+
+  const initialDensity = isMobile ? 50 : 100;
+  const targetDensity = isMobile ? 150 : 350;
+  const step = (targetDensity - initialDensity) / 60;
+
+  const [particleDensity, setParticleDensity] = useState(initialDensity);
+
+  useEffect(() => {
+    let count = 0;
+    const interval = setInterval(() => {
+      setParticleDensity((prev) => {
+        const newDensity = prev + step;
+        return newDensity >= targetDensity ? targetDensity : newDensity;
+      });
+
+      count++;
+      if (count >= 60) {
+        clearInterval(interval);
+      }
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, [isMobile, step, targetDensity]);
+
   return (
     <div className="relative flex flex-col min-h-screen bg-[#010101] text-[#f2f2f2] max-w-screen overflow-x-hidden">
       <div>
@@ -28,7 +52,7 @@ const DefaultLayout = () => {
             background="transparent"
             minSize={0.6}
             maxSize={1.4}
-            particleDensity={isMobile ? 150 : 350}
+            particleDensity={particleDensity}
             className="w-full h-full"
             particleColor="#0bf40a"
           />
