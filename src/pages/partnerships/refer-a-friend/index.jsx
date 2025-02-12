@@ -43,7 +43,7 @@ const ReferFriend = () => {
                 to join the platform!
               </p>
               <button
-                onClick={() => window.open("https://app.zipphy.com/signup", "_blank")}
+                onClick={() => window.open("https://app.fizmofxmarkets.com/signup", "_blank")}
                 className="flex items-center space-x-1 border border-[#0bf40a33] px-4 py-2 rounded-lg text-white bg-[#0bf40a11] backdrop-blur-lg transition-all duration-300 hover:bg-[#0bf40a44] hover:shadow-[0_0_15px_#0bf40a] hover:border-[#0bf40a]"
               >
                 <p>Register Now</p>
@@ -95,7 +95,7 @@ const ReferFriend = () => {
             </div>
             <div className="flex justify-center items-center">
               <button
-                onClick={() => window.open("https://app.zipphy.com/signup", "_blank")}
+                onClick={() => window.open("https://app.fizmofxmarkets.com/signup", "_blank")}
                 className="bg-[#ffffff33] text-white px-4 py-2 rounded-lg backdrop-blur-lg border border-white/20 transition-all duration-300 hover:bg-[#ffffff55] hover:border-white hover:shadow-[0_0_15px_#ffffff]"
               >
                 Register Now

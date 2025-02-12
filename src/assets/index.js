@@ -49,6 +49,7 @@ import wfargo from "./wfargo.webp";
 import adbc from "./adbc.webp";
 import fab from "./fab.webp";
 import rak from "./rak.webp";
+import cfds from "./cfds.webp";
 
 const images = {
   amzn,
@@ -102,6 +103,7 @@ const images = {
   adbc,
   fab,
   rak,
+  cfds,
 };
 
 export default images;

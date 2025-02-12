@@ -60,12 +60,7 @@ const Welcome = () => {
         <div className="lg:w-1/2 text-center lg:text-left space-y-6">
           <h2 className="text-[2rem] font-bold text-secondary">
             Trading Dreams Powered by
-            <ShinyText
-              text="Zipphy"
-              textColor="#0bf40abb"
-              shineColor="#0bf40a"
-              className="ms-2 text-[2rem] italic"
-            />
+            <ShinyText text="Zipphy" textColor="#0bf40abb" shineColor="#0bf40a" className="ms-2 text-[2rem] italic" />
           </h2>
           <p className="text-sm md:text-base text-justify">
             Venture into a realm of endless financial potential with Zipphy. Crafted for both newcomers and seasoned
@@ -76,7 +71,7 @@ const Welcome = () => {
             At Zipphy, we don’t just connect traders—we empower them to conquer the globe.
           </p>
           <button
-            onClick={() => window.open("https://app.zipphy.com/signup", "_blank")}
+            onClick={() => window.open("https://app.fizmofxmarkets.com/signup", "_blank")}
             className="flex items-center space-x-2 border border-[#0bf40a33] px-6 py-3 rounded-lg text-white bg-[#0bf40a11] backdrop-blur-lg transition-all duration-300 hover:bg-[#0bf40a44] hover:shadow-[0_0_20px_#0bf40a] hover:border-[#0bf40a]"
           >
             <p className="text-lg font-medium">Get Started</p>
