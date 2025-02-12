@@ -78,7 +78,7 @@ const AccountTypes = () => {
               )}
               <div className="mt-auto">
                 <button
-                  onClick={() => window.open("https://app.fizmofxmarkets.com/signup", "_blank")}
+                  onClick={() => window.open("https://app.zipphy.com/signup", "_blank")}
                   className="mt-6 w-full py-3 px-6 bg-[#0bf40a] text-[#010101] font-bold rounded-full hover:bg-[#010101] hover:text-[#0bf40a] transition"
                 >
                   {account.cta}
