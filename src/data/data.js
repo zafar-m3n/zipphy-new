@@ -376,7 +376,7 @@ export const promotionsData = [
     title: "PREPAID MASTERCARD",
     subheading: "Unlock endless benefits with our all-in-one Prepaid MasterCard—empower your wallet!",
     text: [
-      "Introducing the exclusive Zipphy Prepaid MasterCard®—crafted just for you! As a valued Premium account holder, you’re invited to unlock a world of effortless global transactions, perfectly synchronized with your Vorbex account.",
+      "Introducing the exclusive Zipphy Prepaid MasterCard®—crafted just for you! As a valued Premium account holder, you’re invited to unlock a world of effortless global transactions, perfectly synchronized with your Zipphy account.",
       "Whether at home or abroad, your financial freedom knows no bounds. Experience the ultimate convenience, as the Zipphy MasterCard® delivers seamless integration and unparalleled access to your funds—anytime, anywhere.",
       "Say goodbye to limits and hello to exclusive perks that elevate your lifestyle.",
     ],
