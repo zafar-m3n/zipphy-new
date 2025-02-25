@@ -1,23 +1,11 @@
 import React from "react";
 import Icon from "@/components/ui/Icon";
 import logoWhite from "@/assets/logo-white.png";
-import { SparklesCore } from "@/components/animated/Sparkles";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <div className="min-h-40 relative w-full bg-[#010101] flex flex-col items-center justify-center overflow-hidden">
-      {/* <div className="w-full absolute inset-0">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={1000}
-          className="w-full h-full"
-          particleColor="#0bf40a"
-        />
-      </div> */}
       <footer className="p-8 z-50">
         <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col items-start justify-between space-y-4">
@@ -106,6 +94,16 @@ export default function Footer() {
 
         <div className="container mx-auto text-justify text-gray-400 pt-8">
           <p>
+            ActiveX Ltd, a company with a solid reputation and over a decade of experience in the market, is a
+            registered International Liquidity Provider. Our registration number is SL008901. We operate both the
+            liquidity and the domain, with our registered address at 130 Old Street, London, EC1V 9B, and our office
+            located at Suite 1, 44 Main Street, Douglas, ML11. Our longevity and standing in the market are testaments
+            to our reliability and commitment to our clients. We adhere to strict trading regulations, including the
+            protection of client funds, which are held in a segregated bank account to ensure their utmost safety and
+            security. Trust in our experience and our commitment to providing exceptional service.
+          </p>
+          <br />
+          <p>
             <span className="font-bold">Risk Warning: </span>
             CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 82.12% of
             retail investor accounts lose money when trading CFDs with this provider. You should consider whether you
@@ -115,6 +113,12 @@ export default function Footer() {
             doesn't take into account your or your client's personal objectives, financial circumstances, or needs.
             Please read our RDN and other legal documents and ensure you fully understand the risks before you make any
             trading decisions. We encourage you to seek independent advice.
+          </p>
+          <br />
+          <p>
+            Zipphy is proud to be a certified broker, duly licensed and regulated by the Financial Services Development
+            House FSDH.org. Our license number is SN178, reflecting our commitment to maintaining the highest standards
+            of financial integrity and transparency.
           </p>
         </div>
       </footer>
