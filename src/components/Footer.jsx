@@ -1,6 +1,7 @@
 import React from "react";
 import Icon from "@/components/ui/Icon";
 import logoWhite from "@/assets/logo-white.png";
+import licenseImage from "@/assets/license-image.png";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -94,16 +95,6 @@ export default function Footer() {
 
         <div className="container mx-auto text-justify text-gray-400 pt-8">
           <p>
-            ActiveX Ltd, a company with a solid reputation and over a decade of experience in the market, is a
-            registered International Liquidity Provider. Our registration number is SL008901. We operate both the
-            liquidity and the domain, with our registered address at 130 Old Street, London, EC1V 9B, and our office
-            located at Suite 1, 44 Main Street, Douglas, ML11. Our longevity and standing in the market are testaments
-            to our reliability and commitment to our clients. We adhere to strict trading regulations, including the
-            protection of client funds, which are held in a segregated bank account to ensure their utmost safety and
-            security. Trust in our experience and our commitment to providing exceptional service.
-          </p>
-          <br />
-          <p>
             <span className="font-bold">Risk Warning: </span>
             CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 82.12% of
             retail investor accounts lose money when trading CFDs with this provider. You should consider whether you
@@ -117,8 +108,15 @@ export default function Footer() {
           <br />
           <p>
             Zipphy is proud to be a certified broker, duly licensed and regulated by the Financial Services Development
-            House FSDH.org. Our license number is SN178, reflecting our commitment to maintaining the highest standards
-            of financial integrity and transparency.
+            House
+            {/* <a href="https://fsdh.org" target="_blank" rel="noopener noreferrer" className="text-[#0bf40a] underline">
+              FSDH.org
+            </a> */}
+            . Our license number is{" "}
+            <a href={licenseImage} target="_blank" rel="noopener noreferrer" className="text-[#0bf40a] hover:underline">
+              GB158
+            </a>
+            , reflecting our commitment to maintaining the highest standards of financial integrity and transparency.
           </p>
         </div>
       </footer>
