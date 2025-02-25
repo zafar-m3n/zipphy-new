@@ -107,8 +107,7 @@ export default function Footer() {
           </p>
           <br />
           <p>
-            Zipphy is proud to be a certified broker, duly licensed and regulated by the Financial Services Development
-            House
+            Zipphy is proud to be a certified broker, duly licensed and regulated by the Financial Securities and Directive Holdings
             {/* <a href="https://fsdh.org" target="_blank" rel="noopener noreferrer" className="text-[#0bf40a] underline">
               FSDH.org
             </a> */}
