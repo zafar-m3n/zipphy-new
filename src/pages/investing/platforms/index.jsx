@@ -2,8 +2,12 @@ import React, { useEffect } from "react";
 import { platforms } from "@/data/data";
 import ShinyText from "@/components/animated/ShinyText";
 import AnimatedContent from "@/components/animated/AnimatedContent";
+import useWidth from "@/hooks/useWidth";
+import Icon from "@/components/ui/Icon";
 
 const Platforms = () => {
+  const { width, breakpoints } = useWidth();
+  const isMobile = width < breakpoints.md;
   useEffect(() => {
     document.title = "Zipphy | Investing";
   }, []);
@@ -50,6 +54,22 @@ const Platforms = () => {
                     </li>
                   ))}
                 </ul>
+                {index === 0 && (
+                  <button
+                    onClick={() => {
+                      const link = document.createElement("a");
+                      link.href = "/assets/mt5setup.exe.zip";
+                      link.download = "mt5setup.zip";
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
+                    className="flex items-center space-x-1 border border-[#0bf40a33] px-4 py-2 rounded-lg text-white bg-[#0bf40a11] backdrop-blur-lg transition-all duration-300 hover:bg-[#0bf40a44] hover:shadow-[0_0_15px_#0bf40a] hover:border-[#0bf40a]"
+                  >
+                    <p className="text-sm md:text-base">Download MT5 Setup</p>
+                    <Icon icon="heroicons:arrow-down-tray" width={isMobile ? 12 : 16} />
+                  </button>
+                )}
               </div>
               <div
                 className={`lg:w-1/2 flex justify-center ${
