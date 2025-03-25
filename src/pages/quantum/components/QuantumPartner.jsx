@@ -24,18 +24,17 @@ const QuantumPartner = () => {
         scale={1.0}
         threshold={0.1}
       >
-        <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-12">
+        <div className="flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-8">
           {/* Image - 25% width on desktop */}
-          <div className="md:order-1 order-2 w-full md:w-1/4">
+          <div className="md:order-1 order-2 w-full md:w-1/2">
             <img
               src={aiImage2}
               alt="Quantum AI Partnership"
-              className="w-full max-h-[350px] object-contain rounded-lg animate-fadeInUp"
+              className="w-full object-contain rounded-lg animate-fadeInUp"
             />
           </div>
 
-          {/* Text - 75% width on desktop */}
-          <div className="md:order-2 order-1 w-full md:w-3/4 space-y-4">
+          <div className="md:order-2 order-1 w-full md:w-1/2 space-y-4 md:pt-24">
             <ShinyText
               text="Take Your Trading to the Next Level"
               textColor="#0bf40abb"
