@@ -4,6 +4,7 @@ import AnimatedContent from "@/components/animated/AnimatedContent";
 import quantumImage from "@/assets/zipphy-ai.png";
 import Quantum from "./components/Quantum";
 import ProvenResults from "./components/ProvenResults";
+import QuantumPartner from "./components/QuantumPartner";
 
 const QuantumAI = () => {
   useEffect(() => {
@@ -52,6 +53,7 @@ const QuantumAI = () => {
       </AnimatedContent>
       <Quantum />
       <ProvenResults />
+      <QuantumPartner />
     </div>
   );
 };
