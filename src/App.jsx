@@ -18,6 +18,7 @@ import IntroducingBroker from "@/pages/partnerships/introducing-broker/index";
 import AboutUs from "@/pages/company/about-us/index";
 import FAQs from "@/pages/company/FAQs/index";
 import ContactUs from "@/pages/company/contact-us/index";
+import QuantumAI from "@/pages/quantum";
 
 const App = () => {
   return (
@@ -35,6 +36,9 @@ const App = () => {
 
           {/* Promotions Route */}
           <Route path="/promotions" element={<Promotions />} />
+
+          {/* Quantum AI Route */}
+          <Route path="/quantum" element={<QuantumAI />} />
 
           {/* Markets Routes */}
           <Route path="/markets/stocks" element={<Stocks />} />

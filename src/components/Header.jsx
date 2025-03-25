@@ -70,7 +70,14 @@ const Header = () => {
                   href={item.link || "#"}
                   className="hover:text-[#0bf40a] transition-colors flex items-center space-x-1 text-white"
                 >
-                  <span>{item.title}</span>
+                  <span className="flex items-center space-x-1">
+                    <span>{item.title}</span>
+                    {item.label && (
+                      <span className="text-[10px] bg-[#0bf40a] text-black px-1.5 py-0.5 rounded-md font-semibold uppercase">
+                        {item.label}
+                      </span>
+                    )}
+                  </span>
                   {item.children && <Icon icon="heroicons:chevron-down" width={16} />}
                 </a>
                 {item.children && (
@@ -177,7 +184,14 @@ const Header = () => {
                   href={item.link}
                   className="flex items-center justify-between w-full text-[#010101] px-4 py-2 rounded-lg bg-[#f2f2f2] transition-colors"
                 >
-                  <span>{item.title}</span>
+                  <span className="flex items-center space-x-1">
+                    <span>{item.title}</span>
+                    {item.label && (
+                      <span className="text-[10px] bg-[#0bf40a] text-black px-1.5 py-0.5 rounded-md font-semibold uppercase">
+                        {item.label}
+                      </span>
+                    )}
+                  </span>
                 </a>
               )}
 

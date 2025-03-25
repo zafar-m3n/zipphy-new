@@ -19,6 +19,11 @@ export const navMenu = [
     link: "/promotions",
   },
   {
+    title: "Quantum AI",
+    link: "/quantum",
+    label: "New",
+  },
+  {
     title: "Markets",
     children: [
       { title: "Stocks", link: "/markets/stocks" },
