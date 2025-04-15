@@ -5,6 +5,7 @@ import quantumImage from "@/assets/zipphy-ai.png";
 import Quantum from "./components/Quantum";
 import ProvenResults from "./components/ProvenResults";
 import QuantumPartner from "./components/QuantumPartner";
+import TradingBots from "./components/TradingBots";
 
 const QuantumAI = () => {
   useEffect(() => {
@@ -52,6 +53,7 @@ const QuantumAI = () => {
         </div>
       </AnimatedContent>
       <Quantum />
+      <TradingBots />
       <ProvenResults />
       <QuantumPartner />
     </div>
