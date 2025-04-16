@@ -99,6 +99,7 @@ export const banks = [
   { name: "Goldman Sachs", logo: images.gsachs },
   { name: "First Abu Dhabi Bank", logo: images.fab },
   { name: "Barclays", logo: images.barclays },
+  { name: "JP Morgan Chase", logo: images.jpmc },
 ];
 
 export const stocks = [

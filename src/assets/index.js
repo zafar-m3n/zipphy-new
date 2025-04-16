@@ -38,7 +38,7 @@ import Mcommodities from "./m-commodities.webp";
 import Mcrypto from "./m-crypto.webp";
 import Mindices from "./m-indices.webp";
 import Mforex from "./m-forex.webp";
-import jpms from "./jpms.webp";
+import jpmc from "./jpmc.png";
 import barclays from "./barclays.webp";
 import boa from "./boa.webp";
 import citibank from "./citibank.webp";
@@ -92,7 +92,7 @@ const images = {
   Mcrypto,
   Mindices,
   Mforex,
-  jpms,
+  jpmc,
   barclays,
   boa,
   citibank,

@@ -59,7 +59,7 @@ const DefaultLayout = () => {
       <div className="relative flex-grow">
         {/* Sparkles background */}
         <div className="absolute inset-0">
-          <Suspense fallback={<Loading />}>
+          <Suspense fallback={null}>
             <SparklesCore
               id="sparkles-main-footer"
               background="transparent"
