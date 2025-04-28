@@ -612,6 +612,7 @@ export const accounts = [
   {
     name: "Classic",
     price: "$100",
+    type: "manual",
     features: [
       "Daily Analysis",
       "Leverage 1:100",
@@ -626,6 +627,7 @@ export const accounts = [
   {
     name: "Islamic",
     price: "$200",
+    type: "manual",
     features: [
       "No Swap Charges",
       "Shariah-Compliant Trading",
@@ -643,6 +645,7 @@ export const accounts = [
   {
     name: "Funded",
     price: "$1000",
+    type: "manual",
     features: [
       "$1000 Will be funded to your account",
       "Daily Analysis",
@@ -659,6 +662,7 @@ export const accounts = [
   {
     name: "Trader",
     price: "$5000",
+    type: "manual",
     features: [
       "Daily Analysis",
       "Leverage 1:250",
@@ -674,6 +678,7 @@ export const accounts = [
   {
     name: "Expert",
     price: "$10,000",
+    type: "manual",
     features: [
       "Cashback Guaranteed",
       "Leverage 1:300",
@@ -691,6 +696,7 @@ export const accounts = [
   {
     name: "Exclusive",
     price: "$25,000",
+    type: "manual",
     features: [
       "Cashback Guaranteed",
       "Leverage 1:500",
@@ -709,6 +715,7 @@ export const accounts = [
   {
     name: "Premium",
     price: "$50,000",
+    type: "manual",
     features: [
       "Cashback Guaranteed",
       "Leverage 1:1000",
@@ -726,6 +733,90 @@ export const accounts = [
       "Dedicated Relationship Manager",
     ],
     cta: "Register Now!",
+  },
+];
+
+export const botAccounts = [
+  {
+    name: "Basic",
+    price: "$300",
+    type: "bot",
+    features: [
+      "Access to AI-powered automated trading with basic strategies",
+      "Trading leverage: 1:50",
+      "Daily trade signals (Limited)",
+      "Max open trades: 20",
+      "Minimum withdrawal: $100",
+      "Standard customer support",
+    ],
+    cta: "Get started",
+  },
+  {
+    name: "Advanced",
+    price: "$1000",
+    type: "bot",
+    features: [
+      "AI trading with customizable risk settings",
+      "Trading leverage: 1:100",
+      "Daily trade signals (Advanced)",
+      "Max open trades: 50",
+      "Minimum withdrawal: $200",
+      "Priority customer support",
+      "Cashback rewards (1% per month on trading volume)",
+    ],
+    cta: "Get started",
+  },
+  {
+    name: "Pro",
+    price: "$5000",
+    type: "bot",
+    features: [
+      "AI trading with smart trend analysis & real-time adjustments",
+      "Trading leverage: 1:200",
+      "Unlimited trade signals",
+      "Max open trades: 60",
+      "Minimum withdrawal: $500",
+      "VIP customer support (24/7)",
+      "Cashback rewards (3% per month on trading volume)",
+      "Free risk management consultation",
+    ],
+    cta: "Get started",
+  },
+  {
+    name: "Expert",
+    price: "$15,000",
+    type: "bot",
+    features: [
+      "AI trading with high-frequency trading capabilities",
+      "Trading leverage: 1:500",
+      "Unlimited trade signals & AI market predictions",
+      "Max open trades: 80",
+      "Minimum withdrawal: $1,000",
+      "Personal Account Manager",
+      "Cashback rewards (5% per month on trading volume)",
+      "Dedicated risk management & strategy consultation",
+      "Priority access to new AI features & market analysis",
+    ],
+    cta: "Get started",
+  },
+  {
+    name: "VIP Elite",
+    price: "$50,000",
+    type: "bot",
+    features: [
+      "AI trading with ultra-fast execution & deep market analysis",
+      "Trading leverage: 1:1000",
+      "VIP access to AI trading models",
+      "Unlimited trade signals & predictive analytics",
+      "Max open trades: Unlimited",
+      "Minimum withdrawal: $5,000",
+      "Dedicated Senior Account Manager & Financial Advisor",
+      "Cashback rewards (7% per month on trading volume)",
+      "Private one-on-one trading mentorship",
+      "Exclusive market insights & AI trading updates",
+      "Priority withdrawal processing (Instant transfers)",
+    ],
+    cta: "Get started",
   },
 ];
 
