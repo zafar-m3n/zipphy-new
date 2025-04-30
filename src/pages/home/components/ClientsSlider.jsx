@@ -1,18 +1,34 @@
 import React from "react";
 import { banks } from "@/data/data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const ClientSlider = () => {
   return (
     <section className="py-8 md:py-16">
-      <div className="overflow-hidden relative">
-        <div className="flex animate-slider space-x-12">
-          {[...banks, ...banks, ...banks].map((bank, index) => (
-            <div key={index} className="flex-none">
-              <img src={bank.logo} alt={bank.name} className="w-36 h-16 object-contain mx-auto" />
-            </div>
-          ))}
-        </div>
-      </div>
+      <Swiper
+        modules={[Autoplay]}
+        slidesPerView={2.5}
+        spaceBetween={20}
+        loop={true}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+        }}
+        speed={4000}
+        breakpoints={{
+          640: { slidesPerView: 3.5 },
+          768: { slidesPerView: 5 },
+          1024: { slidesPerView: 6 },
+        }}
+      >
+        {banks.map((bank, index) => (
+          <SwiperSlide key={index}>
+            <img src={bank.logo} alt={bank.name} className="w-36 h-16 object-contain mx-auto" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };
