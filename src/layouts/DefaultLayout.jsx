@@ -58,7 +58,7 @@ const DefaultLayout = () => {
 
       <div className="relative flex-grow">
         {/* Sparkles background */}
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
           <Suspense fallback={null}>
             <SparklesCore
               id="sparkles-main-footer"
@@ -70,7 +70,7 @@ const DefaultLayout = () => {
               particleColor="#0bf40a"
             />
           </Suspense>
-        </div>
+        </div> */}
 
         <main className="relative z-10">
           <div className="relative z-10 p-4">
