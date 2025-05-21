@@ -929,3 +929,52 @@ export const tradingBots = [
     roi: "35% Weekly",
   },
 ];
+
+export const reviews = [
+  {
+    name: "Arjun Mehta",
+    profile_picture: "https://randomuser.me/api/portraits/men/45.jpg",
+    rating: 4.5,
+    review:
+      "Zipphy is a reliable and user-friendly trading platform, perfect for both beginners and experienced traders. It offers low spreads, fast execution, and a variety of tools to enhance your trading experience. The customer support is responsive and helpful, making it easy to get assistance whenever needed.",
+  },
+  {
+    name: "Fatima Al-Sayed",
+    profile_picture: "https://randomuser.me/api/portraits/women/21.jpg",
+    rating: 5,
+    review:
+      "Zipphy is the best platform I have invested with. The user interface simple and clear and there are no any transaction fees. To top this great experience, my account manager is excellent very knowledgeable and always proactive, Five stars to both the platform and my Account Manager!",
+  },
+  {
+    name: "Ravi Iyer",
+    profile_picture: "https://randomuser.me/api/portraits/men/32.jpg",
+    rating: 4,
+    review:
+      "My Account Manager was a good listener to my needs and guided me through the process with clear instructions and information. The good thing I loved about this platform is instant deposits and withdrawals within seconds",
+  },
+  {
+    name: "Amina Khoury",
+    profile_picture: "https://randomuser.me/api/portraits/women/38.jpg",
+    rating: 4.9,
+    review:
+      "Good platform and easy to use. I found the analysis data very helpful in making an informative decision. My Technical Adviser professionalism was clear throughout the year, and his advice is very helpful and an eye-opener.",
+  },
+  {
+    name: "Imran Siddiqui",
+    profile_picture: "https://randomuser.me/api/portraits/men/18.jpg",
+    rating: 4.8,
+    review: "This broker’s algorithms are top-notch. I’ve seen consistent performance since day one.",
+  },
+  {
+    name: "Sneha Kapoor",
+    profile_picture: "https://randomuser.me/api/portraits/women/44.jpg",
+    rating: 5,
+    review: "Great returns with minimal effort. Setup was easy and the dashboard is clean.",
+  },
+  {
+    name: "Emily Thompson",
+    profile_picture: "https://randomuser.me/api/portraits/women/15.jpg",
+    rating: 4.7,
+    review: "I have been using Zipphy for the last 3 years and I haven’t had face any issues, it looks as it works as intended! the manager of my account was very quick to respond to a query whenever I needed.",
+  },
+];

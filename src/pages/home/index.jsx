@@ -10,6 +10,7 @@ import JoinUs from "./components/JoinUs";
 import MiniChartRow from "./components/MiniChartRow";
 import ClientSlider from "./components/ClientsSlider";
 import AwardsSection from "./components/AwardsSection";
+import ReviewsSection from "./components/ReviewsSection";
 
 const HomePage = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const HomePage = () => {
       <Stats />
       <ClientSlider />
       <Markets />
+      <ReviewsSection />
       <FAQs />
       <JoinUs />
     </div>

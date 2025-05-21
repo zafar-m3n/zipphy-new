@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Icon from "@/components/ui/Icon";
 
-const Rate = ({ value = 0, count = 5, onChange = () => {}, allowHalf = false, interactive = false }) => {
+const Rate = ({ value = 0, count = 5, onChange = () => {}, allowHalf = false, interactive = false, size = 24 }) => {
   const [hoverValue, setHoverValue] = useState(0);
 
   const getStarType = (index) => {
@@ -42,11 +42,11 @@ const Rate = ({ value = 0, count = 5, onChange = () => {}, allowHalf = false, in
           onClick={() => handleClick(i)}
         >
           {starType === "full" ? (
-            <Icon icon="material-symbols:star" className="text-yellow-500" width={24} />
+            <Icon icon="material-symbols:star" className="text-yellow-500" width={size} />
           ) : starType === "half" ? (
-            <Icon icon="material-symbols:star-half" className="text-yellow-500" width={24} />
+            <Icon icon="material-symbols:star-half" className="text-yellow-500" width={size} />
           ) : (
-            <Icon icon="material-symbols:star" className="text-gray-300" width={24} />
+            <Icon icon="material-symbols:star" className="text-gray-300" width={size} />
           )}
         </span>
       );
@@ -54,7 +54,7 @@ const Rate = ({ value = 0, count = 5, onChange = () => {}, allowHalf = false, in
     return stars;
   };
 
-  return <div className="flex space-x-1">{renderStars()}</div>;
+  return <div className="flex">{renderStars()}</div>;
 };
 
 export default Rate;
