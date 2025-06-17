@@ -43,7 +43,7 @@ const ProvenResults = () => {
             <h3 className="text-8xl font-extrabold text-white">
               <CountUp end={6721} duration={2.5} separator="," suffix="+" />
             </h3>
-            <p className="text-gray-400 mt-2">AutoIntelligent AI Traders</p>
+            <p className="text-gray-400 mt-2">Zipphy AI Traders</p>
           </div>
         </div>
       </div>

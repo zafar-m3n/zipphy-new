@@ -19,6 +19,8 @@ import AboutUs from "@/pages/company/about-us/index";
 import FAQs from "@/pages/company/FAQs/index";
 import ContactUs from "@/pages/company/contact-us/index";
 import QuantumAI from "@/pages/quantum";
+import PrivacyPolicy from "@/pages/legal/PrivacyPolicy";
+import Terms from "@/pages/legal/Terms";
 
 const App = () => {
   return (
@@ -55,6 +57,9 @@ const App = () => {
           <Route path="/company/about-us" element={<AboutUs />} />
           <Route path="/company/faq" element={<FAQs />} />
           <Route path="/company/contact-us" element={<ContactUs />} />
+
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
 
           {/* Not Found Routes */}
           <Route path="*" element={<NotFound />} />
