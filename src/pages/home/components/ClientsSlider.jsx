@@ -7,6 +7,7 @@ import "swiper/css";
 const ClientSlider = () => {
   return (
     <section className="py-8 md:py-16">
+      <h2 className="text-[2rem] font-bold text-secondary text-center mb-12">Our Liquidity Providers</h2>
       <Swiper
         modules={[Autoplay]}
         slidesPerView={2.5}

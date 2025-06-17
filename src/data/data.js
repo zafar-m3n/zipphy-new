@@ -858,8 +858,8 @@ export const tradingBots = [
     specifications: ["High-frequency scalping", "Low drawdown", "Safe risk settings", "Trend-following"],
     riskManagement: "Stop-loss Alerts Only",
     profitOptimization: "Standard AI Signals",
-    cashbackBonus: "10% Cashback",
-    roi: "20% Weekly",
+    cashbackBonus: "10% Bonus",
+    roi: "15% Weekly",
   },
   {
     name: "SwiftAI 1000",
@@ -870,8 +870,8 @@ export const tradingBots = [
     specifications: ["Multi-strategy approach", "High adaptability", "Trend-following", "Countertrend"],
     riskManagement: "Trailing Stop Included",
     profitOptimization: "Real-time Market Scans",
-    cashbackBonus: "20% Cashback",
-    roi: "25% Weekly",
+    cashbackBonus: "20% Bonus",
+    roi: "20% Weekly",
   },
   {
     name: "ProfitX 2000",
@@ -882,8 +882,8 @@ export const tradingBots = [
     specifications: ["Auto-adaptive trading", "Customizable risk settings", "Trend-following", "Scalping"],
     riskManagement: "Risk Matrix Enabled",
     profitOptimization: "AI-Backed Entry/Exit",
-    cashbackBonus: "30% Cashback",
-    roi: "30% Weekly",
+    cashbackBonus: "30% Bonus",
+    roi: "20% Weekly",
   },
   {
     name: "AlphaBot 3000",
@@ -894,8 +894,8 @@ export const tradingBots = [
     specifications: ["Automated trend strategy", "Counter-trend strategy", "Trend-following", "Scalping"],
     riskManagement: "Auto-Hedging Enabled",
     profitOptimization: "Deep Learning Analysis",
-    cashbackBonus: "40% Cashback + Bonus",
-    roi: "35% Weekly",
+    cashbackBonus: "40% Bonus",
+    roi: "25% Weekly",
   },
   {
     name: "QuantumAI 5000",
@@ -906,8 +906,8 @@ export const tradingBots = [
     specifications: ["High-frequency scalping", "Low drawdown", "Scalping", "Advanced traders"],
     riskManagement: "Adaptive Risk Controls",
     profitOptimization: "Predictive Analytics",
-    cashbackBonus: "60% Cashback + Signal Upgrade",
-    roi: "35% Weekly",
+    cashbackBonus: "60% Bonus + Signal Upgrade",
+    roi: "30% Weekly",
   },
   {
     name: "ZenithPro 7500",
@@ -925,7 +925,7 @@ export const tradingBots = [
     ],
     riskManagement: "Full Portfolio Automation",
     profitOptimization: "Self-Learning Algorithms",
-    cashbackBonus: "100% Cashback + VIP Access",
+    cashbackBonus: "100% Bonus + VIP Access",
     roi: "35% Weekly",
   },
 ];
@@ -975,6 +975,7 @@ export const reviews = [
     name: "Emily Thompson",
     profile_picture: "https://randomuser.me/api/portraits/women/15.jpg",
     rating: 4.7,
-    review: "I have been using Zipphy for the last 3 years and I haven’t had face any issues, it looks as it works as intended! the manager of my account was very quick to respond to a query whenever I needed.",
+    review:
+      "I have been using Zipphy for the last 3 years and I haven’t had face any issues, it looks as it works as intended! the manager of my account was very quick to respond to a query whenever I needed.",
   },
 ];
