@@ -26,10 +26,10 @@ const HomePage = () => {
       <WhyZipphy />
       <Stats />
       <ClientSlider />
+      <JoinUs />
       <Markets />
       <ReviewsSection />
       <FAQs />
-      <JoinUs />
     </div>
   );
 };
