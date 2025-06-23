@@ -17,7 +17,7 @@ const ClientSlider = () => {
           delay: 0,
           disableOnInteraction: false,
         }}
-        speed={4000}
+        speed={2000}
         breakpoints={{
           640: { slidesPerView: 3.5 },
           768: { slidesPerView: 5 },
