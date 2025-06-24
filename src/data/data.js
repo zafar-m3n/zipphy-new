@@ -1,4 +1,65 @@
 import images from "@/assets";
+import rakbank from "@/assets/banks/rakbank.png";
+import bankofamerica from "@/assets/banks/bankofamerica.png";
+import hsbc from "@/assets/banks/hsbc.png";
+import citibank from "@/assets/banks/citibank.png";
+import wellsFargo from "@/assets/banks/wellsfargo.png";
+import adcb from "@/assets/banks/adcb.png";
+import goldmanSachs from "@/assets/banks/goldmansachs.png";
+import fab from "@/assets/banks/fab.png";
+import barclays from "@/assets/banks/barclays.png";
+import jpmorgan from "@/assets/banks/jpmorgan.png";
+import icbc from "@/assets/banks/icbc.png";
+import creditsuisse from "@/assets/banks/creditsuisse.png";
+import capitalone from "@/assets/banks/capitalone.png";
+import adib from "@/assets/banks/adib.png";
+import standardChartered from "@/assets/banks/standardchartered.png";
+import nbo from "@/assets/banks/nbo.png";
+import qnb from "@/assets/banks/qnb.png";
+import sabb from "@/assets/banks/sabb.png";
+import nbk from "@/assets/banks/nbk.png";
+import ubs from "@/assets/banks/ubs.png";
+import rbc from "@/assets/banks/rbc.png";
+import deutsche from "@/assets/banks/deutsche.png";
+import lloyds from "@/assets/banks/lloydsbankinggroup.png";
+import anz from "@/assets/banks/anz.png";
+import charlesschwab from "@/assets/banks/charlesschwab.png";
+import rabo from "@/assets/banks/rabo.png";
+import dbs from "@/assets/banks/dbs.png";
+import westpac from "@/assets/banks/westpac.png";
+import bayerische from "@/assets/banks/bayerische.png";
+
+export const banks = [
+  { name: "RAK Bank", logo: rakbank },
+  { name: "Bank of America", logo: bankofamerica },
+  { name: "HSBC", logo: hsbc },
+  { name: "Citibank", logo: citibank },
+  { name: "Wells Fargo", logo: wellsFargo },
+  { name: "Abu Dhabi Commercial Bank", logo: adcb },
+  { name: "Goldman Sachs", logo: goldmanSachs },
+  { name: "First Abu Dhabi Bank", logo: fab },
+  { name: "Barclays", logo: barclays },
+  { name: "JP Morgan Chase", logo: jpmorgan },
+  { name: "Industrial and Commercial Bank of China", logo: icbc },
+  { name: "Credit Suisse", logo: creditsuisse },
+  { name: "Capital One", logo: capitalone },
+  { name: "ADIB", logo: adib },
+  { name: "Standard Chartered", logo: standardChartered },
+  { name: "National Bank of Oman", logo: nbo },
+  { name: "Qatar National Bank", logo: qnb },
+  { name: "Saudi British Bank", logo: sabb },
+  { name: "National Bank of Kuwait", logo: nbk },
+  { name: "UBS", logo: ubs },
+  { name: "Royal Bank of Canada", logo: rbc },
+  { name: "Deutsche Bank", logo: deutsche },
+  { name: "Lloyds Banking Group", logo: lloyds },
+  { name: "ANZ Group", logo: anz },
+  { name: "Charles Schwab Corporation", logo: charlesschwab },
+  { name: "Rabo Bank", logo: rabo },
+  { name: "DBS", logo: dbs },
+  { name: "Westpac Australia's first bank", logo: westpac },
+  { name: "Bayerische Landesbank", logo: bayerische },
+];
 
 export const navMenu = [
   {
@@ -87,19 +148,6 @@ export const stats = [
     suffix: "+",
     separator: ",",
   },
-];
-
-export const banks = [
-  { name: "RAK Bank", logo: images.rak },
-  { name: "Bank of America", logo: images.boa },
-  { name: "HSBC", logo: images.hsbc },
-  { name: "Citibank", logo: images.citibank },
-  { name: "Wells Fargo", logo: images.wfargo },
-  { name: "Abu Dhabi Commercial Bank", logo: images.adbc },
-  { name: "Goldman Sachs", logo: images.gsachs },
-  { name: "First Abu Dhabi Bank", logo: images.fab },
-  { name: "Barclays", logo: images.barclays },
-  { name: "JP Morgan Chase", logo: images.jpmc },
 ];
 
 export const stocks = [
