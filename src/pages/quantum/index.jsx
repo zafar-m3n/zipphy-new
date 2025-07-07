@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ShinyText from "@/components/animated/ShinyText";
 import AnimatedContent from "@/components/animated/AnimatedContent";
 import quantumImage from "@/assets/zipphy-ai.png";
@@ -6,11 +6,22 @@ import Quantum from "./components/Quantum";
 import ProvenResults from "./components/ProvenResults";
 import QuantumPartner from "./components/QuantumPartner";
 import TradingBots from "./components/TradingBots";
+import { botAccounts } from "@/data/data";
+import BotTradingAccountCard from "./components/BotTradingAccountCard";
 
 const QuantumAI = () => {
+  const [expanded, setExpanded] = useState({});
+
   useEffect(() => {
     document.title = "Zipphy | Quantum AI";
   }, []);
+
+  const toggleExpand = (index) => {
+    setExpanded((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  };
 
   return (
     <div className="container mx-auto ps-4 py-8 space-y-12">
@@ -52,7 +63,37 @@ const QuantumAI = () => {
           </div>
         </div>
       </AnimatedContent>
+
       <Quantum />
+
+      {/* Bot Trading Accounts Section */}
+      <div>
+        <ShinyText
+          text="Bot Trading Accounts"
+          textColor="#0bf40abb"
+          shineColor="#0bf40a"
+          className="text-2xl md:text-[2rem] font-bold mb-4 md:mb-8 text-center w-full"
+        />
+
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-4 md:mb-8">
+          {botAccounts.map((account, index) => (
+            <AnimatedContent
+              key={`bot-${index}`}
+              distance={100}
+              direction="horizontal"
+              reverse={false}
+              config={{ tension: 50, friction: 25 }}
+              initialOpacity={0.0}
+              animateOpacity
+              scale={1.0}
+              threshold={0.1}
+            >
+              <BotTradingAccountCard account={account} index={index} expanded={expanded} toggleExpand={toggleExpand} />
+            </AnimatedContent>
+          ))}
+        </div>
+      </div>
+
       <TradingBots />
       <ProvenResults />
       <QuantumPartner />
