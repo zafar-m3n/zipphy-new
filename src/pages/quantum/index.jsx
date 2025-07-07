@@ -63,10 +63,8 @@ const QuantumAI = () => {
           </div>
         </div>
       </AnimatedContent>
-
       <Quantum />
-
-      {/* Bot Trading Accounts Section */}
+      <TradingBots />{" "}
       <div>
         <ShinyText
           text="Bot Trading Accounts"
@@ -93,8 +91,6 @@ const QuantumAI = () => {
           ))}
         </div>
       </div>
-
-      <TradingBots />
       <ProvenResults />
       <QuantumPartner />
     </div>
