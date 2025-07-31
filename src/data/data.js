@@ -946,7 +946,7 @@ export const tradingBots = [
     roi: "12% Weekly",
   },
   {
-    name: "QuantumAI 5000",
+    name: "QuantumAI 10000",
     level: "Premium",
     price: "10,000",
     supportedMarkets: ["All Major Markets"],
