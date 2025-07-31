@@ -900,7 +900,7 @@ export const tradingBots = [
   {
     name: "BotLite 500",
     level: "Basic",
-    price: "300",
+    price: "500",
     supportedMarkets: ["Forex"],
     duration: "15 Minutes",
     specifications: ["High-frequency scalping", "Low drawdown", "Safe risk settings", "Trend-following"],
