@@ -96,18 +96,15 @@ export default function Footer() {
         <div className="container mx-auto text-justify text-gray-400 pt-8">
           <p>
             <span className="font-bold">Risk Warning: </span>
-            CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 82.12% of
-            retail investor accounts lose money when trading CFDs with this provider. You should consider whether you
-            understand how CFDs work and whether you can afford to take the high risk of losing your money. You don't
-            own or have rights in the underlying assets. Past performance is not a reliable indicator of future
-            performance and tax laws are subject to change. The information on this website is general in nature and
-            doesn't take into account your or your client's personal objectives, financial circumstances, or needs.
-            Please read our RDN and other legal documents and ensure you fully understand the risks before you make any
-            trading decisions. We encourage you to seek independent advice.
+            Our services involve trading in complex financial instruments that carry a high level of risk and may not be
+            suitable for all investors. You could lose all your invested capital. Please ensure you fully understand the
+            risks involved, consider your level of experience, and seek independent financial advice if necessary. Past
+            performance does not guarantee future results.
           </p>
           <br />
           <p>
-            Zipphy is proud to be a certified broker, duly licensed and regulated by the Financial Securities and Directive Holdings
+            Zipphy is proud to be a certified broker, duly licensed and regulated by the Financial Securities and
+            Directive Holdings
             {/* <a href="https://fsdh.org" target="_blank" rel="noopener noreferrer" className="text-[#0bf40a] underline">
               FSDH.org
             </a> */}
