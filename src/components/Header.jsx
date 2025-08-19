@@ -42,7 +42,7 @@ const Header = () => {
             <Link to="/" className="hover:text-gray-400">
               <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
             </Link>
-            <p className="items-center text-sm text-[#0bf40a] me-6">
+            <p className="items-center hidden md:inline text-sm text-[#0bf40a] me-6">
               Powered by
               <br />
               <span className="text-xs italic me-1">CFS-ZIPP LIMITED </span>
@@ -168,6 +168,9 @@ const Header = () => {
             : "max-h-0 opacity-0 -translate-y-10 pointer-events-none"
         }`}
       >
+        <p className="text-center hidden md:inline text-sm text-[#0bf40a] me-6">
+          Powered by <span className="text-xs italic me-1">CFS-ZIPP LIMITED </span>
+        </p>
         <ul className="flex flex-col space-y-1 p-4">
           {navMenu.map((item, index) => (
             <li key={index} className="relative">
