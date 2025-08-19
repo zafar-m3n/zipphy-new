@@ -38,11 +38,11 @@ const Header = () => {
           scale={1.0}
           threshold={0.1}
         >
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col">
             <Link to="/" className="hover:text-gray-400">
               <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
             </Link>
-            <p className="items-center hidden md:inline text-sm text-[#0bf40a] me-6">
+            <p className="items-center hidden md:inline text-sm text-[#0bf40a] mb-2 -mt-2 w-full">
               Powered by <span className="text-xs italic me-1">CFS-ZIPP LIMITED </span>
             </p>
           </div>
@@ -166,7 +166,7 @@ const Header = () => {
             : "max-h-0 opacity-0 -translate-y-10 pointer-events-none"
         }`}
       >
-        <p className="text-center text-sm text-[#0bf40a] mb-4 w-full">
+        <p className="text-center text-sm text-[#0bf40a] my-2 w-full">
           Powered by <span className="text-xs italic">CFS-ZIPP LIMITED </span>
         </p>
         <ul className="flex flex-col space-y-1 p-4">
