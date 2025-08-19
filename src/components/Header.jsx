@@ -43,7 +43,9 @@ const Header = () => {
               <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
             </Link>
             <p className="items-center hidden md:flex text-sm text-[#0bf40a] me-6">
-              Powered by<span className="text-xs italic me-1">CFS-ZIPP LIMITED </span>
+              Powered by
+              <br />
+              <span className="text-xs italic me-1">CFS-ZIPP LIMITED </span>
             </p>
           </div>
         </AnimatedContent>
