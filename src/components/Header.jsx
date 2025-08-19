@@ -38,7 +38,7 @@ const Header = () => {
           scale={1.0}
           threshold={0.1}
         >
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center">
             <Link to="/" className="hover:text-gray-400">
               <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
             </Link>
