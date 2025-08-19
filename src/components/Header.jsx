@@ -38,14 +38,12 @@ const Header = () => {
           scale={1.0}
           threshold={0.1}
         >
-          <div className="flex flex-col md:flex-row items-center">
+          <div className="flex flex-col items-center">
             <Link to="/" className="hover:text-gray-400">
               <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
             </Link>
             <p className="items-center hidden md:inline text-sm text-[#0bf40a] me-6">
-              Powered by
-              <br />
-              <span className="text-xs italic me-1">CFS-ZIPP LIMITED </span>
+              Powered by <span className="text-xs italic me-1">CFS-ZIPP LIMITED </span>
             </p>
           </div>
         </AnimatedContent>
@@ -168,8 +166,8 @@ const Header = () => {
             : "max-h-0 opacity-0 -translate-y-10 pointer-events-none"
         }`}
       >
-        <p className="text-center text-sm text-[#0bf40a] me-6">
-          Powered by <span className="text-xs italic me-1">CFS-ZIPP LIMITED </span>
+        <p className="text-center text-sm text-[#0bf40a] mb-4 w-full">
+          Powered by <span className="text-xs italic">CFS-ZIPP LIMITED </span>
         </p>
         <ul className="flex flex-col space-y-1 p-4">
           {navMenu.map((item, index) => (
