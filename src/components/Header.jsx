@@ -43,7 +43,7 @@ const Header = () => {
               <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
             </Link>
             <p className="items-center hidden md:flex text-sm text-[#0bf40a] me-6">
-              <span className="text-2xl italic me-1">18 </span> years
+              Powered by<span className="text-2xl italic me-1">CFS-ZIPP LIMITED </span>
             </p>
           </div>
         </AnimatedContent>

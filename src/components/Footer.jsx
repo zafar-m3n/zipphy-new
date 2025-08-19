@@ -103,18 +103,18 @@ export default function Footer() {
           </p>
           <br />
           <p>
-            Zipphy is proud to be a certified broker, duly licensed and regulated by FIZ CONSULTANTS LIMITED
+            Zipphy is proud to be a certified broker, duly licensed and regulated by CFS-ZIPP LIMITED
             {/* <a href="https://fsdh.org" target="_blank" rel="noopener noreferrer" className="text-[#0bf40a] underline">
               FSDH.org
             </a> */}
             . Our company number is{" "}
             <a
-              href="https://find-and-update.company-information.service.gov.uk/company/06145674"
+              href="https://find-and-update.company-information.service.gov.uk/company/03925386"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#0bf40a] hover:underline"
             >
-              06145674
+              03925386
             </a>
             , reflecting our commitment to maintaining the highest standards of financial integrity and transparency.
           </p>
