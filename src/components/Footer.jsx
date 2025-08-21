@@ -39,7 +39,7 @@ export default function Footer() {
                   <div className="aspect-square bg-[#0bf40a] text-[#010101] rounded-full p-2 flex justify-center items-center">
                     <Icon icon="heroicons:map-pin" width={20} />
                   </div>
-                  <p className="ml-4 text-background">57 Carters Road, Dural NSW 2158, Sydney, Australia.</p>
+                  <p className="ml-4 text-background">L7 180 GEORGE ST SYDNEY NSW 2000</p>
                 </div>
                 <div className="flex items-center">
                   <div className="aspect-square bg-[#0bf40a] text-[#010101] rounded-full p-2 flex justify-center items-center">
@@ -54,7 +54,7 @@ export default function Footer() {
                   <div className="aspect-square bg-[#0bf40a] text-[#010101] rounded-full p-2 flex justify-center items-center">
                     <Icon icon="heroicons:map-pin" width={20} />
                   </div>
-                  <p className="ml-4 text-background">22 Broomfield Place, Stoven, United Kingdom.</p>
+                  <p className="ml-4 text-background">790 Uxbridge Road, Hayes, Middlesex, England, UB4 0RS</p>
                 </div>
                 <div className="flex items-center">
                   <div className="aspect-square bg-[#0bf40a] text-[#010101] rounded-full p-2 flex justify-center items-center">
@@ -103,11 +103,8 @@ export default function Footer() {
           </p>
           <br />
           <p>
-            Zipphy is proud to be a certified broker, duly licensed and regulated by CFS-ZIPP LIMITED
-            {/* <a href="https://fsdh.org" target="_blank" rel="noopener noreferrer" className="text-[#0bf40a] underline">
-              FSDH.org
-            </a> */}
-            . Our company number is{" "}
+            Zipphy is proud to be a certified broker, duly licensed and regulated by
+            <strong> CFS-ZIPP LIMITED</strong>. Our company number is{" "}
             <a
               href="https://find-and-update.company-information.service.gov.uk/company/03925386"
               target="_blank"
@@ -117,6 +114,32 @@ export default function Footer() {
               03925386
             </a>
             , reflecting our commitment to maintaining the highest standards of financial integrity and transparency.
+          </p>
+
+          <p>
+            We are also regulated under <strong>ZipMoney Securities Ltd </strong>(
+            <a
+              href="https://service.asic.gov.au/search/EntityDetail?LicenceNumber=222040&PermissionType=Australian%20financial%20services%20licensees&licenceName=ZIPMONEY%20SECURITIES%20LTD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#0bf40a] hover:underline"
+            >
+              Licence No. 222040
+            </a>
+            , ABN: 17 082 380 023, ACN: 082 380 023).
+          </p>
+
+          <p>
+            In addition, our server operations are regulated under <strong>Fiz Consultants Limited </strong>(
+            <a
+              href="https://find-and-update.company-information.service.gov.uk/company/06145674"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#0bf40a] hover:underline"
+            >
+              Company No. 06145674
+            </a>
+            ).
           </p>
         </div>
       </footer>

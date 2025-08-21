@@ -21,28 +21,20 @@ const Welcome = () => {
         return "rgba(102, 255, 178, 0.5)";
       case "AMZN":
         return "rgba(255, 255, 255, 0.5)";
+        case "XAUUSD": // Gold
+        return "rgba(255, 223, 0, 0.5)";
+        case "WTI": // Oil
+        return "rgba(255, 255, 255, 0.5)";
+      case "BTC": // Bitcoin
+        return "rgba(255, 159, 64, 0.5)";
       default:
         return "rgba(255, 255, 255, 0.5)";
     }
   };
 
   const getGlassBorderColor = (name) => {
-    switch (name) {
-      case "MCD":
-        return "rgba(255, 223, 116, 0.5)";
-      case "IBM":
-        return "rgba(178, 102, 255, 0.5)";
-      case "TSLA":
-        return "rgba(255, 102, 102, 0.5)";
-      case "META":
-        return "rgba(102, 178, 255, 0.5)";
-      case "MSFT":
-        return "rgba(102, 255, 178, 0.5)";
-      case "AMZN":
-        return "rgba(255, 255, 255, 0.5)";
-      default:
-        return "rgba(255, 255, 255, 0.5)";
-    }
+    // Border color should match the background color
+    return getGlassBackgroundColor(name);
   };
 
   return (

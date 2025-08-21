@@ -50,10 +50,16 @@ import adbc from "./adbc.webp";
 import fab from "./fab.webp";
 import rak from "./rak.webp";
 import cfds from "./cfds.webp";
+import wti from "./wti.png";
+import btc from "./btc.webp";
+import xauusd from "./xauusd.png";
 
 const images = {
   amzn,
   ibm,
+  wti,
+  xauusd,
+  btc,
   mcd,
   meta,
   msft,

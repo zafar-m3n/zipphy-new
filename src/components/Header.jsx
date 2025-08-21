@@ -43,7 +43,16 @@ const Header = () => {
               <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
             </Link>
             <p className="items-center hidden md:inline text-sm text-[#0bf40a] mb-2 -mt-2 w-full">
-              Powered by <span className="text-xs italic me-1">CFS-ZIPP LIMITED </span>
+              Powered by{" "}
+              <span className="text-xs italic me-1">
+                <a
+                  href="https://find-and-update.company-information.service.gov.uk/company/03925386"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CFS-ZIPP LIMITED
+                </a>{" "}
+              </span>
             </p>
           </div>
         </AnimatedContent>
