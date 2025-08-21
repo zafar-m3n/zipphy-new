@@ -9,8 +9,12 @@ export default function Footer() {
     <div className="min-h-40 relative w-full bg-[#010101] flex flex-col items-center justify-center overflow-hidden">
       <footer className="p-8 z-50">
         <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div className="flex flex-col items-start justify-between space-y-4">
+          <div className="flex flex-col items-start">
             <img src={logoWhite} alt="Zipphy Logo" className="w-full" />
+            <p className="items-center hidden md:inline text-sm text-[#0bf40a] w-full">
+              <span className="text-2xl italic me-1">18</span>
+              years
+            </p>
             {/* <div className="flex space-x-4">
               <div className="rounded-full">
                 <Icon icon="mdi:facebook" width={36} className="text-[#0bf40a]" />
@@ -39,7 +43,7 @@ export default function Footer() {
                   <div className="aspect-square bg-[#0bf40a] text-[#010101] rounded-full p-2 flex justify-center items-center">
                     <Icon icon="heroicons:map-pin" width={20} />
                   </div>
-                  <p className="ml-4 text-background">L7 180 GEORGE ST SYDNEY NSW 2000</p>
+                  <p className="ml-4 text-background">57 Carters Road, Dural NSW 2158, Sydney, Australia.</p>
                 </div>
                 <div className="flex items-center">
                   <div className="aspect-square bg-[#0bf40a] text-[#010101] rounded-full p-2 flex justify-center items-center">
@@ -54,7 +58,7 @@ export default function Footer() {
                   <div className="aspect-square bg-[#0bf40a] text-[#010101] rounded-full p-2 flex justify-center items-center">
                     <Icon icon="heroicons:map-pin" width={20} />
                   </div>
-                  <p className="ml-4 text-background">790 Uxbridge Road, Hayes, Middlesex, England, UB4 0RS</p>
+                  <p className="ml-4 text-background">22 Broomfield Place, Stoven, United Kingdom.</p>
                 </div>
                 <div className="flex items-center">
                   <div className="aspect-square bg-[#0bf40a] text-[#010101] rounded-full p-2 flex justify-center items-center">
