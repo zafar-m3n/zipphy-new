@@ -11,8 +11,8 @@ export default function Footer() {
         <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col items-start">
             <img src={logoWhite} alt="Zipphy Logo" className="w-full" />
-            <p className="items-center hidden md:inline text-sm text-[#0bf40a] w-full">
-              <span className="text-2xl italic me-1">18</span>
+            <p className="items-center hidden md:inline text-[#0bf40a] w-full">
+              <span className="text-4xl italic me-1">18</span>
               years
             </p>
             {/* <div className="flex space-x-4">
@@ -118,6 +118,7 @@ export default function Footer() {
               03925386
             </a>
             , reflecting our commitment to maintaining the highest standards of financial integrity and transparency.
+            Our registration address is <italic>790 Uxbridge Road, Hayes, Middlesex, England, UB4 0RS.</italic>
           </p>
 
           <p>
@@ -130,7 +131,8 @@ export default function Footer() {
             >
               Licence No. 222040
             </a>
-            , ABN: 17 082 380 023, ACN: 082 380 023).
+            , ABN: 17 082 380 023, ACN: 082 380 023), with the registation address:{" "}
+            <italic>L7 180 GEORGE ST SYDNEY NSW 2000.</italic>
           </p>
 
           <p>
@@ -143,7 +145,8 @@ export default function Footer() {
             >
               Company No. 06145674
             </a>
-            ).
+            ). Our server is registered at the address{" "}
+            <italic>17 Holly Drive, Minster On Sea, Sheerness, Kent, ME12 3GR</italic>
           </p>
         </div>
       </footer>
