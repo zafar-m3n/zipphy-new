@@ -960,7 +960,7 @@ export const tradingBots = [
   {
     name: "ZenithPro 15000",
     level: "Elite AI Suite",
-    price: "15,000",
+    price: "40,000",
     supportedMarkets: ["All Markets", "Custom Options"],
     duration: "12 Hours",
     specifications: [
@@ -979,7 +979,7 @@ export const tradingBots = [
   {
     name: "TitanPro 40000",
     level: "Elite AI Suite",
-    price: "40,000",
+    price: "100,000",
     supportedMarkets: ["All Markets", "Custom Options"],
     duration: "24 Hours",
     specifications: [
