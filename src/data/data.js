@@ -958,7 +958,7 @@ export const tradingBots = [
     roi: "15% Weekly",
   },
   {
-    name: "ZenithPro 15000",
+    name: "ZenithPro 40000",
     level: "Elite AI Suite",
     price: "40,000",
     supportedMarkets: ["All Markets", "Custom Options"],
@@ -975,9 +975,11 @@ export const tradingBots = [
     profitOptimization: "Self-Learning Algorithms",
     cashbackBonus: "100% Bonus + VIP Access",
     roi: "20% Weekly",
+    specialNote: "Invest $150,000 and claim ZenithPro 40000 FREE! Exclusive to the first 60 clients only",
+    exclusive: true,
   },
   {
-    name: "TitanPro 40000",
+    name: "TitanPro 100000",
     level: "Elite AI Suite",
     price: "100,000",
     supportedMarkets: ["All Markets", "Custom Options"],
@@ -994,6 +996,8 @@ export const tradingBots = [
     profitOptimization: "Self-Learning Algorithms",
     cashbackBonus: "100% Bonus + VIP Access",
     roi: "30% Weekly",
+    specialNote: "Invest $350,000 and secure TitanPro 100000 FREE! Only for the first 20 clients – ultra-limited!",
+    exclusive: true,
   },
 ];
 
