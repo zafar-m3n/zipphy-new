@@ -933,7 +933,7 @@ export const tradingBots = [
     riskManagement: "Stop-loss Alerts Only",
     profitOptimization: "Standard AI Signals",
     cashbackBonus: "10% Bonus",
-    roi: "5% Weekly",
+    roi: "2%-5% Weekly",
   },
   {
     name: "SwiftAI 1000",
@@ -947,7 +947,7 @@ export const tradingBots = [
     riskManagement: "Trailing Stop Included",
     profitOptimization: "Real-time Market Scans",
     cashbackBonus: "20% Bonus",
-    roi: "7% Weekly",
+    roi: "3%-6% Weekly",
   },
   {
     name: "ProfitX 2000",
@@ -961,7 +961,7 @@ export const tradingBots = [
     riskManagement: "Risk Matrix Enabled",
     profitOptimization: "AI-Backed Entry/Exit",
     cashbackBonus: "30% Bonus",
-    roi: "10% Weekly",
+    roi: "6%-8% Weekly",
   },
   {
     name: "AlphaBot 3000",
@@ -975,7 +975,7 @@ export const tradingBots = [
     riskManagement: "Auto-Hedging Enabled",
     profitOptimization: "Deep Learning Analysis",
     cashbackBonus: "40% Bonus",
-    roi: "12% Weekly",
+    roi: "8%-10% Weekly",
   },
   {
     name: "QuantumAI 10000",
@@ -989,7 +989,7 @@ export const tradingBots = [
     riskManagement: "Adaptive Risk Controls",
     profitOptimization: "Predictive Analytics",
     cashbackBonus: "60% Bonus + Signal Upgrade",
-    roi: "15% Weekly",
+    roi: "10%-12% Weekly",
   },
   {
     name: "ZenithPro 40000",
