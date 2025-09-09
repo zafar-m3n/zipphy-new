@@ -77,14 +77,22 @@ const TradingBotCard = ({ bot }) => {
           <p className="mt-1 text-sm text-white">{bot.level}</p>
         </div>
 
-        <div className="text-3xl font-bold text-white">
+        <div className="text-3xl font-bold text-white flex items-center space-x-6 mt-4 sm:mt-0">
+          <div className="flex flex-col items-center">
+            {bot.discount && (
+              <span className="text-sm font-semibold px-3 py-1 rounded-full bg-gradient-to-r from-green-500 to-emerald-400 text-black shadow-md">
+                {bot.discount} OFF
+              </span>
+            )}
+            {bot.discount && <span className="text-lg line-through text-slate-300 mt-1">${bot.price}</span>}
+          </div>
           <GradientText
             colors={["#0bf40a", "#0ae0f4", "#0bf40a", "#0bf40a"]}
             animationSpeed={3}
             showBorder={true}
-            className="px-4 py-2 !mx-0"
+            className="px-4 py-2 text-4xl font-extrabold"
           >
-            ${bot.price}
+            ${bot.discount ? bot.discountedPrice : bot.price}
           </GradientText>
         </div>
       </div>
@@ -116,8 +124,18 @@ const TradingBotCard = ({ bot }) => {
         </div>
 
         <div>
-          <h3 className="font-semibold mb-1">Cashback / Bonus</h3>
-          <p className="mb-4">{bot.cashbackBonus}</p>
+          {bot.cashbackBonus && (
+            <>
+              <h3 className="font-semibold mb-1">Cashback / Bonus</h3>
+              <p className="mb-4">{bot.cashbackBonus}</p>
+            </>
+          )}
+          {bot.function && (
+            <>
+              <h3 className="font-semibold mb-1">Function Duration</h3>
+              <p className="mb-4 text-red-500 font-bold">{bot.function}</p>
+            </>
+          )}
           <div className="border-t border-[#0bf40a] my-4" />
           <h3 className="font-semibold mb-1">ROI</h3>
           <p>{bot.roi}</p>
