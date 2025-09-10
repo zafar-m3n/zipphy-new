@@ -992,7 +992,7 @@ export const tradingBots = [
     roi: "10%-12% Weekly",
   },
   {
-    name: "ZenithPro 80000",
+    name: "ApexPro 80000",
     level: "Elite AI Suite",
     price: "80,000",
     supportedMarkets: ["All Markets", "Custom Options"],
@@ -1013,7 +1013,7 @@ export const tradingBots = [
     exclusive: true,
   },
   {
-    name: "TitanPro 200000",
+    name: "VanguardPro 200000",
     level: "Elite AI Suite",
     price: "200,000",
     supportedMarkets: ["All Markets", "Custom Options"],
