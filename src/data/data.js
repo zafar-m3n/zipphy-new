@@ -1009,7 +1009,6 @@ export const tradingBots = [
     profitOptimization: "Self-Learning Algorithms",
     cashbackBonus: "100% Bonus + VIP Access",
     roi: "35% Weekly",
-    specialNote: "Invest $150,000 and claim ZenithPro 80000 FREE! Exclusive to the first 60 clients only",
     exclusive: true,
   },
   {
@@ -1030,7 +1029,6 @@ export const tradingBots = [
     profitOptimization: "Self-Learning Algorithms",
     cashbackBonus: "100% Bonus + VIP Access",
     roi: "60% Weekly",
-    specialNote: "Invest $350,000 and secure TitanPro 200000 FREE! Only for the first 20 clients – ultra-limited!",
     exclusive: true,
   },
 ];
