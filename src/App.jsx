@@ -21,6 +21,7 @@ import ContactUs from "@/pages/company/contact-us/index";
 import QuantumAI from "@/pages/quantum";
 import PrivacyPolicy from "@/pages/legal/PrivacyPolicy";
 import Terms from "@/pages/legal/Terms";
+import Offers from "@/pages/offers";
 
 const App = () => {
   return (
@@ -60,6 +61,8 @@ const App = () => {
 
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />
+
+          <Route path="/offers" element={<Offers />} />
 
           {/* Not Found Routes */}
           <Route path="*" element={<NotFound />} />

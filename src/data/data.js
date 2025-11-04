@@ -73,11 +73,16 @@ export const navMenu = [
       { title: "Deposits & Withdrawals", link: "/investing/deposits-withdrawals" },
       { title: "Platforms", link: "/investing/platforms" },
       { title: "Education", link: "/investing/education" },
+      {
+        title: "Promotions",
+        link: "/promotions",
+      },
     ],
   },
   {
-    title: "Promotions",
-    link: "/promotions",
+    title: "Offers",
+    link: "/offers",
+    label: "HOT",
   },
   {
     title: "Quantum AI",
@@ -1080,5 +1085,38 @@ export const reviews = [
     rating: 4.7,
     review:
       "I have been using Zipphy for the last 3 years and I haven’t had face any issues, it looks as it works as intended! the manager of my account was very quick to respond to a query whenever I needed.",
+  },
+];
+
+export const offersData = [
+  {
+    id: "loan-2025",
+    title: "Trader Empowerment & Loan Partnership Program",
+    ribbon: {
+      labelPrefix: "Offer Valid Till",
+      dateLabel: "31st Dec 2025",
+    },
+    validUntil: "2025-12-31",
+    intro: [
+      "We’re pleased to introduce our Loan Assistance Program, designed to help traders scale up their portfolios and enhance their trading capacity.",
+    ],
+    tiers: [
+      { name: "Bronze", amount: 2500, accent: "bronze" },
+      { name: "Silver", amount: 5000, accent: "silver" },
+      { name: "Gold", amount: 7500, accent: "gold" },
+      { name: "Platinum", amount: 10000, accent: "platinum" },
+    ],
+    contactPoints: [
+      "To verify your eligibility based on your account type and trading history etc.",
+      "To understand the repayment structure and loan utilization terms.",
+      "To learn how this loan can enhance your trading capacity and maximize your returns.",
+    ],
+    keyNotes: [
+      "Loan availability is subject to approval and account performance review.",
+      "Loan funds are provided exclusively for trading activities within your account.",
+      "Repayment terms and duration will be discussed upon eligibility confirmation.",
+      "Early repayment or consistent performance may qualify for additional trading benefits or cashback rewards.",
+      "This offer is available for a limited time.",
+    ],
   },
 ];

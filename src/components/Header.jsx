@@ -27,92 +27,89 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between px-4 md:mx-auto md:container">
-      <div className="flex items-center">
-        <AnimatedContent
-          distance={100}
-          direction="horizontal"
-          reverse={isMobile ? false : true}
-          config={{ tension: 50, friction: 25 }}
-          initialOpacity={0.0}
-          animateOpacity
-          scale={1.0}
-          threshold={0.1}
-        >
-          <div className="flex flex-col">
-            <Link to="/" className="hover:text-gray-400">
-              <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
-            </Link>
-            <p className="items-center hidden md:inline text-sm text-[#0bf40a] mb-2 -mt-2 w-full">
-              Powered by{" "}
-              <span className="text-xs italic me-1">
-                <a
-                  href="https://find-and-update.company-information.service.gov.uk/company/03925386"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  CFS-ZIPP LIMITED
-                </a>{" "}
-              </span>
-            </p>
-          </div>
-        </AnimatedContent>
-
-        <AnimatedContent
-          distance={100}
-          direction="vertical"
-          reverse={false}
-          config={{ tension: 50, friction: 25 }}
-          initialOpacity={0.0}
-          animateOpacity
-          scale={1.0}
-          threshold={0.1}
-        >
-          <nav className="hidden md:flex space-x-6 md:p-3 rounded-md backdrop-blur-lg shadow-lg">
-            {navMenu.map((item, index) => (
-              <div
-                key={index}
-                className="relative"
-                onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}
+      <AnimatedContent
+        distance={100}
+        direction="horizontal"
+        reverse={isMobile ? false : true}
+        config={{ tension: 50, friction: 25 }}
+        initialOpacity={0.0}
+        animateOpacity
+        scale={1.0}
+        threshold={0.1}
+      >
+        <div className="flex flex-col">
+          <Link to="/" className="hover:text-gray-400">
+            <img src={logoWhite} alt="Zipphy Logo" className="h-20" />
+          </Link>
+          <p className="items-center hidden md:inline text-sm text-[#0bf40a] mb-2 -mt-2 w-full">
+            Powered by{" "}
+            <span className="text-xs italic me-1">
+              <a
+                href="https://find-and-update.company-information.service.gov.uk/company/03925386"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <a
-                  href={item.link || "#"}
-                  className="hover:text-[#0bf40a] transition-colors flex items-center space-x-1 text-white"
+                CFS-ZIPP LIMITED
+              </a>{" "}
+            </span>
+          </p>
+        </div>
+      </AnimatedContent>
+      <AnimatedContent
+        distance={100}
+        direction="vertical"
+        reverse={false}
+        config={{ tension: 50, friction: 25 }}
+        initialOpacity={0.0}
+        animateOpacity
+        scale={1.0}
+        threshold={0.1}
+      >
+        <nav className="hidden md:flex space-x-6 md:p-3 rounded-md backdrop-blur-lg shadow-lg">
+          {navMenu.map((item, index) => (
+            <div
+              key={index}
+              className="relative"
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <a
+                href={item.link || "#"}
+                className="hover:text-[#0bf40a] transition-colors flex items-center space-x-1 text-white"
+              >
+                <span className="flex items-center space-x-1">
+                  <span>{item.title}</span>
+                  {item.label && (
+                    <span className="text-[10px] bg-[#0bf40a] text-black px-1.5 py-0.5 rounded-md font-semibold uppercase">
+                      {item.label}
+                    </span>
+                  )}
+                </span>
+                {item.children && <Icon icon="heroicons:chevron-down" width={16} />}
+              </a>
+              {item.children && (
+                <div
+                  className={`absolute left-0 top-full flex flex-col bg-[#ffffff55] backdrop-blur-md shadow-lg mt-2 w-60 rounded-lg transition-transform transition-opacity duration-300 border border-white/20 ${
+                    openDesktopMenu === index
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 -translate-y-2 pointer-events-none"
+                  }`}
                 >
-                  <span className="flex items-center space-x-1">
-                    <span>{item.title}</span>
-                    {item.label && (
-                      <span className="text-[10px] bg-[#0bf40a] text-black px-1.5 py-0.5 rounded-md font-semibold uppercase">
-                        {item.label}
-                      </span>
-                    )}
-                  </span>
-                  {item.children && <Icon icon="heroicons:chevron-down" width={16} />}
-                </a>
-                {item.children && (
-                  <div
-                    className={`absolute left-0 top-full flex flex-col bg-[#ffffff55] backdrop-blur-md shadow-lg mt-2 w-60 rounded-lg transition-transform transition-opacity duration-300 border border-white/20 ${
-                      openDesktopMenu === index
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 -translate-y-2 pointer-events-none"
-                    }`}
-                  >
-                    {item.children.map((child, childIndex) => (
-                      <a
-                        key={childIndex}
-                        href={child.link}
-                        className="px-4 py-2 hover:bg-[#0bf40a33] text-white hover:text-[#0bf40a] transition-colors rounded-md"
-                      >
-                        {child.title}
-                      </a>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-          </nav>
-        </AnimatedContent>
-      </div>
+                  {item.children.map((child, childIndex) => (
+                    <a
+                      key={childIndex}
+                      href={child.link}
+                      className="px-4 py-2 hover:bg-[#0bf40a33] text-white hover:text-[#0bf40a] transition-colors rounded-md"
+                    >
+                      {child.title}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </nav>
+      </AnimatedContent>
 
       <AnimatedContent
         distance={100}
