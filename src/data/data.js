@@ -997,9 +997,9 @@ export const tradingBots = [
     roi: "10%-12% Weekly",
   },
   {
-    name: "ApexPro 80000",
+    name: "TradeRex 120000",
     level: "Elite AI Suite",
-    price: "80,000",
+    price: "120,000",
     supportedMarkets: ["All Markets", "Custom Options"],
     duration: "12 Hours",
     specifications: [
@@ -1013,13 +1013,14 @@ export const tradingBots = [
     riskManagement: "Full Portfolio Automation",
     profitOptimization: "Self-Learning Algorithms",
     cashbackBonus: "100% Bonus + VIP Access",
-    roi: "35% Weekly",
+    roi: "42% Weekly",
     exclusive: true,
+    specialNote: "Invest $250,000 and claim TradeRex 120000 for FREE! Exclusive for the first 20 clients",
   },
   {
-    name: "VanguardPro 200000",
+    name: "Fortune + IQ 250000",
     level: "Elite AI Suite",
-    price: "200,000",
+    price: "250,000",
     supportedMarkets: ["All Markets", "Custom Options"],
     duration: "24 Hours",
     specifications: [
@@ -1033,8 +1034,9 @@ export const tradingBots = [
     riskManagement: "Full Portfolio Automation",
     profitOptimization: "Self-Learning Algorithms",
     cashbackBonus: "100% Bonus + VIP Access",
-    roi: "60% Weekly",
+    roi: "78% Weekly",
     exclusive: true,
+    specialNote: "Invest $500,000 and claim Fortune + IQ 250000 for FREE! Exclusive for the first 10 clients",
   },
 ];
 
