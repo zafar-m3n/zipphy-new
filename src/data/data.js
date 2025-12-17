@@ -1015,7 +1015,7 @@ export const tradingBots = [
     cashbackBonus: "100% Bonus + VIP Access",
     roi: "42% Weekly",
     exclusive: true,
-    specialNote: "Invest $250,000 and claim TradeRex 120000 for FREE! Exclusive for the first 20 clients",
+    specialNote: "Invest $250,000 and claim TradeRex 120000 for FREE! Exclusive for the first 10 clients",
   },
   {
     name: "Fortune + IQ 500000",
@@ -1036,7 +1036,7 @@ export const tradingBots = [
     cashbackBonus: "100% Bonus + VIP Access",
     roi: "78% Weekly",
     exclusive: true,
-    specialNote: "Invest $500,000 and claim Fortune + IQ 250000 for FREE! Exclusive for the first 10 clients",
+    specialNote: "Invest $500,000 and claim Fortune + IQ 250000 for FREE! Exclusive for the first 5 clients",
   },
 ];
 
