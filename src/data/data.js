@@ -997,9 +997,9 @@ export const tradingBots = [
     roi: "10%-12% Weekly",
   },
   {
-    name: "TradeRex 250000",
+    name: "TradeRex 200000",
     level: "Elite AI Suite",
-    price: "250,000",
+    price: "200,000",
     supportedMarkets: ["All Markets", "Custom Options"],
     duration: "12 Hours",
     specifications: [
@@ -1015,7 +1015,7 @@ export const tradingBots = [
     cashbackBonus: "100% Bonus + VIP Access",
     roi: "42% Weekly",
     exclusive: true,
-    specialNote: "Invest $250,000 and claim TradeRex 120000 for FREE! Exclusive for the first 10 clients",
+    specialNote: "Invest $450,000 and claim TradeRex 200000 for FREE! Exclusive for the first 10 clients",
   },
   {
     name: "Fortune + IQ 500000",
@@ -1036,7 +1036,7 @@ export const tradingBots = [
     cashbackBonus: "100% Bonus + VIP Access",
     roi: "78% Weekly",
     exclusive: true,
-    specialNote: "Invest $500,000 and claim Fortune + IQ 250000 for FREE! Exclusive for the first 5 clients",
+    specialNote: "Invest $1,000,000 and claim Fortune + IQ 500000 for FREE! Exclusive for the first 5 clients",
   },
 ];
 
