@@ -997,9 +997,9 @@ export const tradingBots = [
     roi: "10%-12% Weekly",
   },
   {
-    name: "TradeRex 120000",
+    name: "TradeRex 250000",
     level: "Elite AI Suite",
-    price: "120,000",
+    price: "250,000",
     supportedMarkets: ["All Markets", "Custom Options"],
     duration: "12 Hours",
     specifications: [
@@ -1018,9 +1018,9 @@ export const tradingBots = [
     specialNote: "Invest $250,000 and claim TradeRex 120000 for FREE! Exclusive for the first 20 clients",
   },
   {
-    name: "Fortune + IQ 250000",
+    name: "Fortune + IQ 500000",
     level: "Elite AI Suite",
-    price: "250,000",
+    price: "500,000",
     supportedMarkets: ["All Markets", "Custom Options"],
     duration: "24 Hours",
     specifications: [
