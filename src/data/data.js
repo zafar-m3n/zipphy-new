@@ -593,7 +593,7 @@ export const educations = [
     title: "How To Trade Cryptocurrencies? ",
     content: [
       "Cryptocurrencies let you to exchange them for goods and services in the same way that traditional money allows you to, or trade them for profit. Digital currencies, on the other hand, are decentralized, and no single body controls their issue, unlike traditional money, which is issued and managed by governments.",
-      "The crypto market is a large market with many distinct trading systems. As a result, it would be ideal if you could comprehend the industry from your perspective. Crypto exchanges, cryptocurrencies, and trading platforms should all be included in your investigation. TradeProNet is here to provide you the best experience of investing with vast range of trading tools and techniques to help you avoid loses. It’s a good idea to weigh the benefits and drawbacks of investing in such a broad market. You can start trading if you’re satisfied with the information you’ve acquired.",
+      "The crypto market is a large market with many distinct trading systems. As a result, it would be ideal if you could comprehend the industry from your perspective. Crypto exchanges, cryptocurrencies, and trading platforms should all be included in your investigation. Zipphy is here to provide you the best experience of investing with vast range of trading tools and techniques to help you avoid loses. It’s a good idea to weigh the benefits and drawbacks of investing in such a broad market. You can start trading if you’re satisfied with the information you’ve acquired.",
     ],
     subtitle: "",
     features: [
@@ -602,7 +602,7 @@ export const educations = [
       "Learn different technical techniques to read the chart and to identify trends. Acquiring knowledge of supply and demand would help you sharpen your strategy.",
     ],
     conclusion: [
-      "In the present market, there are over 18,000 cryptocurrencies in circulation. Choose a crypto currency based on its performance and market longevity parameters. You want to trade a currency that will provide you with respectable long-term profits. Avoid trading initial coin offers (ICOs) as a newbie since you don’t know their success rate or legitimacy. TradeProNet is believed to be the best platform to enhance your experience of investing in cryptocurrencies.",
+      "In the present market, there are over 18,000 cryptocurrencies in circulation. Choose a crypto currency based on its performance and market longevity parameters. You want to trade a currency that will provide you with respectable long-term profits. Avoid trading initial coin offers (ICOs) as a newbie since you don’t know their success rate or legitimacy. Zipphy is believed to be the best platform to enhance your experience of investing in cryptocurrencies.",
       "“Don’t put all your eggs in one basket,” as the expression goes, and this concept applies to both digital assets and equities. Investing in digital assets has the potential to be profitable, but it also has the potential to be risky. Diversifying your holdings among numerous cryptocurrencies allows you to limit your losses if the price of one cryptocurrency falls.",
     ],
     image: images.cryptocurrencies,
